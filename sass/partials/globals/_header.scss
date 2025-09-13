@@ -1,0 +1,102 @@
+.header-partial-f00228 {
+    padding-top: scaleVW(49, $desktop);
+    @media(max-width:768px){
+        padding-top: scaleVW(25, $movil);
+    }
+    .content{
+        width: scaleVW(1306.7671, $desktop);
+        margin: 0 auto;
+        @media(max-width:768px){
+            width: scaleVW(340, $movil);
+            position: relative;
+        }
+        h2{
+            font-size: scaleVW(62.46, $desktop);
+            line-height: LH(74.95, 62.46);
+            text-align: center;
+            color: $primary;
+            font-family: $big_caslon;
+            margin-bottom: scaleVW(36, $desktop);
+        }
+        .bar-menu{
+            display: none;
+            width: scaleVW(30, $movil);
+            height: scaleVW(20, $movil);
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: auto;
+            z-index: 2;
+            position: relative;
+            span{
+                width: scaleVW(30, $movil);
+                height: scaleVW(1.9, $movil);
+                background: $primary;
+            }
+            @media(max-width:768px){
+                display: flex;
+            }   
+        }
+        .bar-menu.active{
+            top: 10px;
+            .top{
+                position: absolute;
+                transform: rotate(45deg);
+            }
+            .bottom{
+                transform: rotate(-45deg);
+            }
+            .center{
+                display: none;
+            }
+        }
+        .the-nav{
+            ul{
+                display: flex;
+                list-style: none;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                justify-content: center;
+                gap: scaleVW(66, $desktop);
+                li{
+                    a{
+                        color: $primary;
+                        font-size: scaleVW(18, $desktop);
+                        line-height: LH(21.6, 18);
+                        font-family: $bodoni;
+                        text-decoration: none;
+                    }
+                    .active{
+                        font-weight: 700;
+                    }
+                }
+            }
+            @media(max-width:768px){
+                position: absolute;
+                right: -100%;
+                top: 0;
+                height: 100vh;
+                width: 70%;
+                padding: 0;
+                transition: .2s;
+                transform: translateX(scaleVW(25, $movil));
+                z-index: 1;
+                ul{
+                    flex-direction: column;
+                    gap: scaleVW(6, $movil);
+                    align-items: baseline;
+                    li{
+                        a{
+                            text-align: right;
+                            font-size: scaleVW(16, $movil);
+                            line-height: LH(21.2, 16);
+                        }
+                    }
+                }
+            }
+        }
+        .the-nav.active{
+            right: 0;
+        }
+    }
+}

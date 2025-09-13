@@ -1,0 +1,110 @@
+.colombia-partial-518f89 {
+    background: $third;
+    padding-top: scaleVW(135, $desktop);
+    padding-bottom: scaleVW(117, $desktop);
+    @media(max-width:768px){
+        padding: 0 0 scaleVW(75, $movil) 0;
+    }
+    .content{
+        width: scaleVW(1726, $desktop);
+        margin: 0 auto;
+        .top{
+            text-align: center;
+            max-width: scaleVW(1247.8725, $desktop);
+            margin: 0 auto;
+            margin-bottom: scaleVW(112, $desktop);
+            @media(max-width:768px){
+                max-width: scaleVW(333.7064, $movil);
+                padding-top: scaleVW(75, $movil);
+            }
+            h2{
+                color: $primary;
+                font-family: $big_caslon;
+                color: $primary;
+                font-size: scaleVW(60, $desktop);
+                line-height: LH(72, 60);
+                margin-bottom: scaleVW(154, $desktop);
+                letter-spacing: scaleVW(10, $desktop);
+                @media(max-width:768px){
+                    font-size: scaleVW(26, $movil);
+                    line-height: LH(31.2, 26);
+                    margin-bottom: scaleVW(20, $movil);
+                    letter-spacing: scaleVW(7, $movil);
+                }
+            }
+            p{
+                color: $primary;
+                margin: 0;
+                font-family: $bodoni;
+                font-style: italic;
+                font-size: scaleVW(34.12, $desktop);
+                line-height: LH(40.95, 34.12);
+                @media(max-width:768px){
+                    font-size: scaleVW(16, $movil);
+                    line-height: LH(19.2, 16);
+                    margin-bottom: scaleVW(25, $movil);
+                }
+            }
+        }
+        .colombia-places{
+            display: flex;
+            gap: scaleVW(107, $desktop) scaleVW(32, $desktop);
+            flex-wrap: wrap;
+            @media(max-width:768px){
+                gap: scaleVW(35, $movil) scaleVW(9, $movil);
+            }
+            .place{
+                width: scaleVW(406.1399, $desktop);
+                @media(max-width:768px){
+                    width: 100%;
+                }
+                img{
+                    width: 100%;
+                    height: scaleVW(406.1399, $desktop);
+                    object-fit: cover;
+                    object-position: center;
+                    margin-bottom: scaleVW(52, $desktop);
+                    @media(max-width:768px){
+                        height: scaleVW(330, $movil);
+                        margin-bottom: scaleVW(12, $movil);
+                    }
+                }
+                .text-content{
+                    width: scaleVW(322.1043,$desktop);
+                    margin: 0 auto;
+                    text-align: center;
+                    h3{
+                        font-size: scaleVW(21, $desktop);
+                        line-height: LH(25.2, 21);
+                        color: $primary;
+                        font-family: $bodoni;
+                        text-transform: uppercase;
+                        font-style: italic;
+                        margin-bottom: scaleVW(35, $desktop);
+                    }
+                    p{
+                        font-family: $bodoni;
+                        color: $primary;
+                        font-style: italic;
+                        font-size: scaleVW(21, $desktop);
+                        line-height: LH(25.2, 21);
+                        margin-bottom: 0;
+                    }
+                    @media(max-width:768px){
+                        width: scaleVW(333.7064, $movil);
+                        h3{
+                            font-size: scaleVW(20, $movil);
+                            line-height: LH(24, 20);
+                            margin-bottom: scaleVW(8, $movil);
+                            font-style: 600;
+                        }
+                        p{
+                            font-size: scaleVW(14, $movil);
+                            line-height: LH(19.2, 14);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

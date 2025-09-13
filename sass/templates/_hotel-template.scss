@@ -1,0 +1,379 @@
+#hotel-template-caaf6c {
+    .main-content{
+        padding: scaleVW(99, $desktop) 0 scaleVW(66, $desktop) 0;
+        position: relative;
+        @media(max-width:768px){
+            padding: scaleVW(72, $movil) scaleVW(27, $movil) scaleVW(36, $movil) scaleVW(27, $movil);
+        }
+        img{
+            width: scaleVW(549.1843, $desktop);
+            height: scaleVW(285.1169, $desktop);
+            position: absolute;
+            left: scaleVW(18, $desktop);
+            top: scaleVW(66, $desktop);
+            @media(max-width:768px){
+                width: scaleVW(115.1869, $movil);
+                height: scaleVW(59.8009, $movil);
+                left: scaleVW(3, $movil);
+                top: scaleVW(13, $movil);
+            }
+        }
+        .text-content{
+            width: scaleVW(771.833, $desktop);
+            margin: 0 auto;
+            text-align: center;
+            @media(max-width:768px){
+                width: scaleVW(324.3522, $movil);
+            }
+            h1{
+                font-family: $bodoni;
+                color: $primary;
+                font-size: scaleVW(72, $desktop);
+                line-height: LH(66.4, 72);
+                letter-spacing: scaleVW(10, $desktop);
+                margin-bottom: scaleVW(31, $desktop);
+                @media(max-width:768px){
+                    font-size: scaleVW(30.26, $movil);
+                    line-height: LH(27.9, 30.26);
+                    letter-spacing: scaleVW(2, $movil);
+                    margin-bottom: scaleVW(8, $movil);
+                }
+            }
+            p{
+                font-family: $bodoni;
+                font-style: italic;
+                font-size: scaleVW(24, $desktop);
+                line-height: LH(28.8, 24);
+                color: $primary;
+                margin-bottom: 0;
+                @media(max-width:768px){
+                    font-size: scaleVW(16, $movil);
+                    line-height: LH(19.2, 16);
+                }
+            }
+        }
+    }
+    /*=========== Hotel section ============*/
+    .hotels{
+        .title{
+            color: $primary;
+            font-family: $big_caslon;
+            font-size: scaleVW(48, $desktop);
+            line-height: LH(57.6, 48);
+            letter-spacing: scaleVW(4, $desktop);
+            text-align: center;
+            @media(max-width:768px){
+                font-size: scaleVW(24, $movil);
+                line-height: LH(28.8, 24);
+                letter-spacing: scaleVW(4, $movil);
+                margin-bottom: scaleVW(23, $movil);
+            }
+        }
+        .hotel{
+            width: scaleVW(800, $desktop);
+            margin: 0 auto;
+            padding-bottom: scaleVW(243, $desktop);
+            @media(max-width:768px){
+                width: scaleVW(336.1891, $movil);
+            }
+            .main-image{
+                width: scaleVW(800, $desktop);
+                height: scaleVW(533, $desktop);
+                margin-bottom: scaleVW(47, $desktop);
+                @media(max-width:768px){
+                    width: scaleVW(336.1891, $movil);
+                    height: scaleVW(223.986, $movil);
+                    margin-bottom: scaleVW(18, $movil);
+                }
+            }
+            .text-content{
+                width: scaleVW(738, $desktop);
+                margin: 0 auto;
+                @media(max-width:768px){
+                    width: scaleVW(310.1345, $movil);
+                }
+                .name{
+                    font-family: $bodoni;
+                    color: $primary;
+                    font-style: italic;
+                    font-size: scaleVW(39.46, $desktop);
+                    line-height: LH(47.36, 39.46);
+                    margin-top: 0;
+                    @media(max-width:768px){
+                        font-size: scaleVW(19, $movil);
+                        line-height: LH(22.8, 19);
+                        margin-bottom: scaleVW(10, $movil);
+                    }
+                }
+                .google-maps{
+                    display: flex;
+                    font-family: $bodoni;
+                    font-style: italic;
+                    color: $primary;
+                    font-size: scaleVW(24, $desktop);
+                    line-height: LH(28.8, 24);
+                    margin-bottom: scaleVW(26, $desktop);
+                    @media(max-width:768px){
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(19.2, 16);
+                        margin-bottom: scaleVW(18, $movil);
+                    }
+                }
+                .description{
+                    font-family: $bodoni;
+                    color: $primary;
+                    font-style: italic;
+                    font-size: scaleVW(24, $desktop);
+                    line-height: LH(28.8, 24);
+                    margin-bottom: scaleVW(13, $desktop);
+                    @media(max-width:768px){
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(19.2, 16);
+                        margin-bottom: scaleVW(16, $movil);
+                    }
+                }
+                .cta{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: scaleVW(738, $desktop);
+                    height: scaleVW(90, $desktop);
+                    font-family: $bodoni;
+                    font-style: italic;
+                    font-size: scaleVW(39.46, $desktop);
+                    line-height: LH(47.36, 39.46);
+                    text-decoration: none;
+                    @media(max-width:768px){
+                        width: scaleVW(310.1345, $movil);
+                        height: scaleVW(37.8213, $movil);
+                        font-size: scaleVW(18, $movil);
+                        line-height: LH(21.6, 18);
+                    }
+                }
+                .primary-button{
+                    background: $primary;
+                    color: $third;
+                    margin-bottom: scaleVW(20, $desktop);
+                    @media(max-width:768px){
+                        margin-bottom: scaleVW(8, $movil);
+                    }
+                }
+                .secondary-button{
+                    background: transparent;
+                    border: scaleVW(1.5, $desktop) solid #cda9d1;
+                    color: $primary;
+                    @media(max-width:768px){
+                        border: scaleVW(1.5, $movil) solid #cda9d1;
+                    }
+                }
+            }
+        }
+    }
+    /*========= End content =========*/
+    .end-content{
+        h2{
+            color: $primary;
+            font-family: $big_caslon;
+            font-size: scaleVW(48, $desktop);
+            line-height: LH(57.6, 48);
+            letter-spacing: scaleVW(4, $desktop);
+            text-align: center;
+            margin-bottom: scaleVW(60, $desktop);
+            @media(max-width:768px){
+                font-size: scaleVW(24, $movil);
+                line-height: LH(28.8, 24);
+                letter-spacing: scaleVW(4, $movil);
+                margin-bottom: scaleVW(23, $movil);
+            }
+        }
+        .top-content{
+            display: flex;
+            align-items: center;
+            width: scaleVW(1623.5, $desktop);
+            margin: 0 auto scaleVW(120, $desktop) auto;
+            gap: scaleVW(73, $desktop);
+            @media(max-width:768px){
+                flex-direction: column;
+                width: scaleVW(307, $movil);
+                gap: scaleVW(21, $movil);
+                padding-bottom: scaleVW(50, $movil);
+            }
+            .left{
+                width: scaleVW(863, $desktop);
+                h3{
+                    position: relative;
+                    margin-bottom: scaleVW(19, $desktop);
+                    display: flex;
+                    align-items: center;
+                    span{
+                        color: $primary;
+                        font-size: scaleVW(24, $desktop);
+                        line-height: LH(28.8, 24);
+                        font-family: $bodoni;
+                        font-style: italic;
+                        font-weight: 400;
+                        position: relative;
+                        z-index: 1;
+                        strong{
+                            font-weight: 600;
+                        }
+                    }
+                    &::after{
+                        content: '';
+                        width: scaleVW(917.867, $desktop);
+                        height: scaleVW(67, $desktop);
+                        position: absolute;
+                        left: - scaleVW(144, $desktop);
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background: $secondary;
+                    }
+                }
+                .description{
+                    color: $primary;
+                    font-size: scaleVW(24, $desktop);
+                    line-height: LH(28.8, 24);
+                    font-family: $bodoni;
+                    font-style: italic;
+                    font-weight: 400;
+                }
+                @media(max-width:768px){
+                    width: scaleVW(307, $movil);
+                    h3{
+                        margin-bottom: scaleVW(15, $movil);
+                        span{
+                            font-size: scaleVW(18, $movil);
+                            line-height: LH(21.6, 18);
+                        }
+                        &::after{
+                            width: scaleVW(364.5, $movil);
+                            height: scaleVW(58.1602, $movil);
+                            left: - scaleVW(41, $movil);
+                        }
+                    }
+                    .description{
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(19.2, 16);
+                        margin-bottom: 0;
+                        p:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            .right{
+                width: scaleVW(688, $desktop);
+                img{
+                    width: 100%;
+                    height: scaleVW(387, $desktop);
+                }
+                @media(max-width:768px){
+                    width: scaleVW(307, $movil);
+                    img{
+                        height: scaleVW(172.6875, $movil);
+                    }
+                }
+            }
+        }
+        .bottom-content{
+            display: flex;
+            width: scaleVW(1623, $desktop);
+            gap: scaleVW(82, $desktop);
+            margin: 0 auto;
+            align-items: end;
+            padding-bottom: scaleVW(262, $desktop);
+            @media(max-width:768px){
+                flex-direction: column;
+                width: scaleVW(307, $movil);
+                gap: scaleVW(21, $movil);
+                padding-bottom: scaleVW(50, $movil);
+            }
+            .left{
+                width: scaleVW(760.5, $desktop);
+                h3{
+                    position: relative;
+                    margin-bottom: scaleVW(19, $desktop);
+                    display: flex;
+                    align-items: center;
+                    span{
+                        color: $primary;
+                        font-size: scaleVW(24, $desktop);
+                        line-height: LH(28.8, 24);
+                        font-family: $bodoni;
+                        font-style: italic;
+                        font-weight: 400;
+                        position: relative;
+                        z-index: 1;
+                        strong{
+                            font-weight: 600;
+                        }
+                    }
+                    &::after{
+                        content: '';
+                        width: scaleVW(408.0169, $desktop);
+                        height: scaleVW(67, $desktop);
+                        position: absolute;
+                        left: - scaleVW(144, $desktop);
+                        top: 50%;
+                        transform: translateY(-50%);
+                        background: $secondary;
+                    }
+                }
+                .description{
+                    color: $primary;
+                    font-size: scaleVW(24, $desktop);
+                    line-height: LH(28.8, 24);
+                    font-family: $bodoni;
+                    font-style: italic;
+                    font-weight: 400;
+                }
+                @media(max-width:768px){
+                    width: scaleVW(307, $movil);
+                    h3{
+                        margin-bottom: scaleVW(15, $movil);
+                        span{
+                            font-size: scaleVW(18, $movil);
+                            line-height: LH(21.6, 18);
+                            font-weight: 500;
+                        }
+                        &::after{
+                            width: scaleVW(229.9971, $movil);
+                            height: scaleVW(37.7676, $movil);
+                            left: - scaleVW(41, $movil);
+                        }
+                    }
+                    .description{
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(19.2, 16);
+                        margin-bottom: 0;
+                        p:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+            .right{
+                width: scaleVW(760.5, $desktop);
+                .description{
+                    color: $primary;
+                    font-size: scaleVW(24, $desktop);
+                    line-height: LH(28.8, 24);
+                    font-family: $bodoni;
+                    font-style: italic;
+                    font-weight: 400;
+                }
+                @media(max-width:768px){
+                    width: scaleVW(307, $movil);
+                    .description{
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(19.2, 16);
+                        margin-bottom: 0;
+                        p:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

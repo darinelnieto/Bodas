@@ -1,0 +1,41 @@
+.countdown-partial-3dfca8 {
+    padding: scaleVW(109, $desktop) 0;
+    @media(max-width:768px){
+        padding: scaleVW(90, $movil) 0;
+    }
+    #counntdown{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $third;
+        text-align: center;
+        gap: scaleVW(184, $desktop);
+        width: scaleVW(1540.1553, $desktop);
+        margin: 0 auto;
+        @media(max-width:768px){
+            width: scaleVW(355.1783, $movil);
+            gap: scaleVW(42, $movil);
+        }
+        .item-count{
+            span{
+                font-family: $bodoni;
+                font-size: scaleVW(30, $desktop);
+                line-height: LH(36, 30);
+                @media(max-width:768px){
+                    font-size: scaleVW(12, $movil);
+                    line-height: LH(36, 12);
+                }
+            }
+            span:first-child{
+                font-size: scaleVW(129.26, $desktop);
+                line-height: LH(155.12, 129.26);
+                margin-bottom: scaleVW(21, $desktop);
+                @media(max-width:768px){
+                    font-size: scaleVW(28.82, $movil);
+                    line-height: LH(34.58, 28.82);
+                    margin-bottom: scaleVW(5, $movil);
+                }
+            }
+        }
+    }
+}

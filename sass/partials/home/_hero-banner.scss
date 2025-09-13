@@ -1,0 +1,78 @@
+.hero-banner-partial-f313d1 {
+    padding: scaleVW(57, $desktop) scaleVW(99, $desktop) scaleVW(27, $desktop) scaleVW(104, $desktop);
+    width: 100%;
+    text-align: center;
+    @media(max-width:768px){
+        padding: scaleVW(57, $movil) scaleVW(20, $movil) scaleVW(27, $movil) scaleVW(20, $movil);
+    }
+    .main-image{
+        width: scaleVW(1717.4333, $desktop);
+        height: scaleVW(596.2582, $desktop);
+        @media(max-width:768px){
+            width: scaleVW(336.7562, $movil);
+            height: scaleVW(116.9149, $movil);
+        }
+    }
+    .wedding-date{
+        font-family: $big_caslon;
+        color: $primary;
+        font-size: scaleVW(199.73, $desktop);
+        line-height: LH(239.68, 199.73);
+        display: flex;
+        align-items: center;
+        gap: scaleVW(59, $desktop);
+        justify-content: center;
+        height: scaleVW(250.3691, $desktop);
+        margin-bottom: scaleVW(29, $desktop);
+        span{
+            display: block;
+            width: scaleVW(19.4127, $desktop);
+            height: scaleVW(19.4127, $desktop);
+            background: $four;
+            border-radius: 50%;
+            transform: translateY(1vw);
+        }
+        @media(max-width:768px){
+            font-size: scaleVW(99, $movil);
+            line-height: LH(139.68, 99);
+            height: scaleVW(150.3691, $movil);
+            margin-bottom: scaleVW(29, $movil);
+            span{
+                width: scaleVW(12, $movil);
+                height: scaleVW(12, $movil);
+            }
+        }
+    }
+    .main-text{
+        font-family: $bodoni;
+        color: $primary;
+        font-size: scaleVw(69.63, $desktop);
+        line-height: LH(71.56, 69.63);
+        margin-bottom: scaleVW(113, $desktop);
+        @media(max-width:768px){
+            font-size: scaleVw(48, $movil);
+            line-height: LH(50, 48);
+            margin-bottom: scaleVW(113, $movil);
+        }
+    }
+    .secondary-text{
+        color: $primary;
+        font-family: $bodoni;
+        font-size: scaleVW(39.46, $desktop);
+        line-height: LH(47.36, 39.46);
+        margin-bottom: scaleVW(55, $desktop);
+        @media(max-width:768px){
+            font-size: scaleVW(22, $movil);
+            line-height: LH(36, 22);
+            margin-bottom: scaleVW(55, $movil);
+        }
+    }
+    .secondary-image{
+        width: scaleVW(175.8514, $desktop);
+        height: scaleVW(82.0897, $desktop);
+        @media(max-width:768px){
+            width: scaleVW(78.8313, $movil);
+            height: scaleVW(36.7995, $movil);
+        }
+    }
+}

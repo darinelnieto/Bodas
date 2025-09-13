@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: 'Big Caslon';
+    src: url('../fonts/BigCaslon-Medium.woff2') format('woff2'),
+        url('../fonts/BigCaslon-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+/*========== Font family ==========*/
+$bodoni: "Bodoni Moda", serif;
+$raleway: "Raleway", sans-serif;
+$big_caslon: 'Big Caslon';
+/*======== Globals color ========*/
+$primary: var(--main-color);
+$secondary: var(--secondary-color);
+$third: var(--third-color);
+$four: var(--four-color);
+$black:#000000;
+$white:#ffffff;
+/*======== Function width ========*/
+$movil: 390;
+$desktop: 1920;
+@function scaleVW($size, $viewportWidth) {
+    @return calc(($size * 100) / $viewportWidth) * 1vw;
+}
+@function LH($lineheight, $fontSize) {
+    @return calc($lineheight / $fontSize);
+}
+html{
+    width: 100%;
+    overflow-x: hidden;
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+}

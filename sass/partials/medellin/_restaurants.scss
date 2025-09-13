@@ -1,0 +1,112 @@
+.restaurants-partial-38d844 {
+    padding: scaleVW(125, $desktop) 0 scaleVW(80, $desktop) 0;
+    @media(max-width:768px){
+        padding: scaleVW(75, $movil) 0;
+    }
+    .content{
+        width: scaleVW(1846, $desktop);
+        margin: 0 auto;
+        @media(max-width:768px){
+            max-width: scaleVW(333.7064, $movil);
+        }
+        .top{
+            text-align: center;
+            margin-bottom: scaleVW(112, $desktop);
+            h2{
+                font-size: scaleVW(60, $desktop);
+                line-height: LH(72, 60);
+                color: $primary;
+                font-family: $big_caslon;
+                letter-spacing: scaleVW(10, $desktop);
+                margin: 0;
+            }
+            p{
+                font-family: $bodoni;
+                color: $primary;
+                font-style: italic;
+                font-size: scaleVW(27.87, $desktop);
+                line-height: LH(33.45, 27.87);
+                margin-bottom: 0;
+            }
+            @media(max-width:768px){
+                margin-bottom: scaleVW(75, $movil);
+                h2{
+                    font-size: scaleVW(26, $movil);
+                    line-height: LH(31.2, 26);
+                    margin-bottom: scaleVW(20, $movil);
+                    letter-spacing: scaleVW(7, $movil);
+                }
+                p{
+                    font-size: scaleVW(16, $movil);
+                    line-height: LH(19.2, 16);
+                    margin-bottom: scaleVW(25, $movil);
+                }
+            }
+        }
+        .restaurants{
+            display: flex;
+            flex-wrap: wrap;
+            gap: scaleVW(56, $desktop) scaleVW(40, $desktop);
+            @media(max-width:768px){
+                gap: scaleVW(35, $movil) scaleVW(9, $movil);
+            }
+            .restaurant{
+                width: scaleVW(422.1425, $desktop);
+                @media(max-width:768px){
+                    width: 100%;
+                }
+                a{
+                    text-decoration: none;
+                    display: block;
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        height: scaleVW(330.3698, $desktop);
+                        object-fit: cover;
+                        object-position: center;
+                        margin-bottom: scaleVW(37, $desktop);
+                        @media(max-width:768px){
+                            height: scaleVW(257.7364, $movil);
+                            margin-bottom: scaleVW(12, $movil);
+                        }
+                    }
+                    .text-content{
+                        width: scaleVW(385.1736, $desktop);
+                        margin: 0 auto;
+                        h3{
+                            color: $primary;
+                            font-family: $bodoni;
+                            font-style: italic;
+                            font-size: scaleVW(21, $desktop);
+                            line-height: LH(25.2, 21);
+                            margin-bottom: scaleVW(43, $desktop);
+                            text-align: center;
+                            font-weight: 700;
+                        }
+                        p{
+                            color: $primary;
+                            font-family: $bodoni;
+                            font-style: italic;
+                            font-size: scaleVW(21, $desktop);
+                            line-height: LH(25.2, 21);
+                            margin-bottom: 0;
+                        }
+                        @media(max-width:768px){
+                            width: 95%;
+                            h3{
+                                font-size: scaleVW(20, $movil);
+                                line-height: LH(24, 20);
+                                margin-bottom: scaleVW(8, $movil);
+                                font-style: 600;
+                            }
+                            p{
+                                font-size: scaleVW(14, $movil);
+                                line-height: LH(19.2, 14);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

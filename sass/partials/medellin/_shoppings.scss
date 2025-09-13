@@ -1,0 +1,98 @@
+.shoppings-partial-6a31bf {
+    padding: scaleVW(85, $desktop) 0;
+    background: $third;
+    @media(max-width:768px){
+        padding: 0 0 scaleVW(75, $movil) 0;
+    }
+    .content{
+        width: scaleVW(1719, $desktop);
+        margin: 0 auto;
+        h2{
+            font-size: scaleVW(60, $desktop);
+            line-height: LH(72, 60);
+            color: $primary;
+            font-family: $big_caslon;
+            letter-spacing: scaleVW(10, $desktop);
+            margin-bottom: scaleVW(100, $desktop);
+            text-align: center;
+        }
+        @media(max-width:768px){
+            max-width: scaleVW(333.7064, $movil);
+            h2{
+                font-size: scaleVW(26, $movil);
+                line-height: LH(31.2, 26);
+                margin-bottom: scaleVW(45, $movil);
+                letter-spacing: scaleVW(7, $movil);
+            }
+        }
+        .stores{
+            display: flex;
+            gap: scaleVW(21, $desktop);
+            flex-wrap: wrap;
+            @media(max-width:768px){
+                gap: scaleVW(35, $movil) scaleVW(9, $movil);
+            }
+            .store{
+                width: scaleVW(559, $desktop);
+                position: relative;
+                @media(max-width:768px){
+                    width: 100%;
+                }
+                .text-content{
+                    height: scaleVW(380, $desktop);
+                    padding-top: scaleVW(43, $desktop);
+                    h3{
+                        font-size: scaleVW(24, $desktop);
+                        line-height: LH(28.8, 24);
+                        font-family: $bodoni;
+                        font-weight: 600;
+                        width: scaleVW(322.1043, $desktop);
+                        margin: 0 auto;
+                        margin-bottom: scaleVW(41, $desktop);
+                        text-align: center;
+                    }
+                    .description{
+                        font-family: $bodoni;
+                        font-weight: 400;
+                        font-size: scaleVW(21, $desktop);
+                        line-height: LH(25.2, 21);
+                        width: scaleVW(322.1043, $desktop);
+                        margin: 0 auto;
+                    }
+                    @media(max-width:768px){
+                        width: 100%;
+                        height: scaleVW(215.3953, $movil);
+                        padding: scaleVW(20, $movil) 0;
+                        h3{
+                            font-size: scaleVW(20, $movil);
+                            line-height: LH(24, 20);
+                            margin-bottom: scaleVW(8, $movil);
+                            font-style: 600;
+                            width: scaleVW(230.8687, $movil);
+                        }
+                        .description{
+                            font-size: scaleVW(14, $movil);
+                            line-height: LH(19.2, 14);
+                            width: scaleVW(230.8687, $movil);
+                        }
+                    }
+                }
+                img{
+                    position: relative;
+                    width: scaleVW(485, $desktop);
+                    height: scaleVW(257.05, $desktop);
+                    object-fit: cover;
+                    object-position: center;
+                    top: - scaleVW(79, $desktop);
+                    margin: 0 auto;
+                    display: block;
+                    @media(max-width:768px){
+                        width: scaleVW(293.2558, $movil);
+                        height: scaleVW(155.3953, $movil);
+                        top: - scaleVW(57, $movil);
+                    }
+                }
+            }
+        }
+    }
+}

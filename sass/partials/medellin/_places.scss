@@ -1,0 +1,108 @@
+.places-partial-fd9a4c {
+    background: $third;
+    padding-top: scaleVW(82, $desktop);
+    @media(max-width:768px){
+        padding-top: 0;
+    }
+    .content{
+        width: scaleVW(1835, $desktop);
+        margin: 0 auto;
+        @media(max-width:768px){
+            width: scaleVW(333.7064, $movil);
+        }
+        h2{
+            text-align: center;
+            font-family: $big_caslon;
+            color: $primary;
+            font-size: scaleVW(60, $desktop);
+            line-height: LH(72, 60);
+            margin-bottom: scaleVW(50, $desktop);
+            letter-spacing: scaleVW(10, $desktop);
+            @media(max-width:768px){
+                font-size: scaleVW(26, $movil);
+                line-height: LH(31.2, 26);
+                margin-bottom: scaleVW(20, $movil);
+                letter-spacing: scaleVW(7, $movil);
+            }
+        }
+        .places{
+            margin-bottom: scaleVW(47, $desktop);
+            @media(max-width:768px){
+                margin-bottom: scaleVW(47, $movil);
+            }
+            h3{
+                color: $primary;
+                font-family: $bodoni;
+                font-style: italic;
+                text-align: center;
+                font-size: scaleVW(34.12, $desktop);
+                line-height: LH(40.95, 34.12);
+                margin-bottom: scaleVW(76, $desktop);
+                @media(max-width:768px){
+                    font-size: scaleVW(16, $movil);
+                    line-height: LH(19.2, 16);
+                    margin-bottom: scaleVW(25, $movil);
+                }
+            }
+            .places-list{
+                display: flex;
+                flex-wrap: wrap;
+                gap: scaleVW(53, $desktop) scaleVW(33, $desktop);
+                @media(max-width:768px){
+                    gap: scaleVW(35, $movil) scaleVW(9, $movil);
+                }
+                .place-card{
+                    width: scaleVW(588.3768, $desktop);
+                    @media(max-width:768px){
+                        width: 100%;
+                    }
+                    .main-image{
+                        width: 100%;
+                        height: scaleVW(340.523, $desktop);
+                        object-fit: cover;
+                        object-position: center;
+                        margin-bottom: scaleVW(59, $desktop);
+                        @media(max-width:768px){
+                            height: scaleVW(191.6435, $movil);
+                            margin-bottom: scaleVW(12, $movil);
+                        }
+                    }
+                    .text-content{
+                        width: 100%;
+                        padding: 0 scaleVW(29, $desktop);
+                        h4{
+                            color: $primary;
+                            font-family: $bodoni;
+                            font-size: scaleVW(24, $desktop);
+                            line-height: LH(28.8, 24);
+                            margin-bottom: scaleVW(35, $desktop);
+                        }
+                        p{
+                            color: $primary;
+                            font-family: $bodoni;
+                            font-size: scaleVW(21, $desktop);
+                            line-height: LH(25.2, 21);
+                            margin-bottom: 0;
+                        }
+                        @media(max-width:768px){
+                            padding: 0 scaleVW(8, $movil);
+                            h4{
+                                font-size: scaleVW(20, $movil);
+                                line-height: LH(24, 20);
+                                margin-bottom: scaleVW(8, $movil);
+                                font-style: 600;
+                            }
+                            p{
+                                font-size: scaleVW(14, $movil);
+                                line-height: LH(19.2, 14);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .places:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

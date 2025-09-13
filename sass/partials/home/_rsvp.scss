@@ -1,0 +1,216 @@
+.rsvp-partial-39366a {
+    position: relative;
+    padding: scaleVW(194, $desktop) 0;
+    overflow: hidden;
+    @media(max-width:768px){
+        padding: scaleVW(48, $movil) scaleVW(27, $movil);
+    }
+    .form-content{
+        width: scaleVW(728, $desktop);
+        margin: 0 auto;
+        @media(max-width:768px){
+            width: 100%;
+        }
+        .title{
+            color: $primary;
+            text-align: center;
+            font-size: scaleVW(72, $desktop);
+            line-height: LH(66.4, 72);
+            font-family: $bodoni;
+            letter-spacing: scaleVW(14, $desktop);
+            margin-bottom: scaleVW(100, $desktop);
+            @media(max-width:768px){
+                font-size: scaleVW(34.85, $movil);
+                line-height: LH(14.4, 34.85);
+                letter-spacing: scaleVW(14, $movil);
+                margin-bottom: scaleVW(48, $movil);
+            }
+        }
+        .description{
+            text-align: center;
+            font-family: $bodoni;
+            color: $black;
+            font-size: scaleVW(39.46, $desktop);
+            line-height: LH(47.36, 39.46);
+            margin-bottom: scaleVW(79, $desktop);
+            @media(max-width:768px){
+                font-size: scaleVW(19.1, $movil);
+                line-height: LH(22.92, 19.1);
+                margin-bottom: scaleVW(38, $movil);
+            }
+        }
+        .form{
+            .intput-container{
+                p{
+                    text-align: center;
+                    margin-bottom: scaleVW(69, $desktop);
+                    label{
+                        font-family: $bodoni;
+                        color: $black;
+                        font-size: scaleVW(30, $desktop);
+                        line-height: LH(36, 30);
+                        @media(max-width:768px){
+                            font-size: scaleVW(16, $movil);
+                            line-height: LH(17.42, 16);
+                            margin-bottom: scaleVW(36, $movil);
+                        }
+                    }
+                    input, textarea{
+                        font-family: $bodoni;
+                        color: $black;
+                        font-size: scaleVW(27, $desktop);
+                        line-height: LH(36, 27);
+                        text-align: center;
+                        width: 100%;
+                        height: scaleVW(88, $desktop);
+                        background: transparent;
+                        border: none;
+                        outline: none;
+                        border-bottom: scaleVW(1.5, $desktop) solid $black;
+                        @media(max-width:768px){
+                            font-size: scaleVW(14.52, $movil);
+                            line-height: LH(17.42, 14.52);
+                            margin-bottom: scaleVW(36, $movil);
+                            border-bottom: scaleVW(1.5, $movil) solid $black;
+                            height: scaleVW(42, $movil);
+                        }
+                    }
+                    textarea{
+                        height: scaleVW(94, $desktop);
+                    }
+                }
+            }
+            .radio-contain{
+                p{
+                    text-align: center;
+                    margin-bottom: scaleVW(69, $desktop);
+                    label{
+                        font-family: $bodoni;
+                        color: $black;
+                        font-size: scaleVW(30, $desktop);
+                        line-height: LH(36, 30);
+                        margin-bottom: scaleVW(64, $desktop);
+                        @media(max-width:768px){
+                            font-size: scaleVW(14.52, $movil);
+                            line-height: LH(17.42, 14.52);
+                            margin-bottom: scaleVW(36, $movil);
+                        }
+                    }
+                    .wpcf7-radio{
+                        display: flex;
+                        flex-direction: column;
+                        width: scaleVW(306.9805, $desktop);
+                        margin: 0 auto;
+                        align-items: flex-start;
+                        @media(max-width:768px){
+                            width: scaleVW(148.5832, $movil);
+                        }
+                        .wpcf7-list-item{
+                            margin: 0;
+                            label{
+                                display: flex;
+                                align-items: center;
+                                gap: scaleVW(44, $desktop);
+                                margin-bottom: scaleVW(34, $desktop);
+                                cursor: pointer;
+                                @media(max-width:768px){
+                                    gap: scaleVW(21, $movil);
+                                    margin-bottom: scaleVW(16, $movil);
+                                }
+                                input{
+                                    display: none;
+                                }
+                                .radio-animate{
+                                    position: relative;
+                                    width: scaleVW(36, $desktop);
+                                    height: scaleVW(36, $desktop);
+                                    border: scaleVW(1.5, $desktop) solid $black;
+                                    border-radius: 50%;
+                                    padding: scaleVW(3, $desktop);
+                                    &::after{
+                                        content: '';
+                                        display: none;
+                                        width: scaleVW(28, $desktop);
+                                        height: scaleVW(28, $desktop);
+                                        background: $black;
+                                        border-radius: 50%;
+                                        position: absolute;
+                                        left: 50%;
+                                        top: 50%;
+                                        transform: translate(-50%, -50%);
+                                    }
+                                    @media(max-width:768px){
+                                        width: scaleVW(17.4245, $movil);
+                                        height: scaleVW(17.4245, $movil);
+                                        border: scaleVW(1.5, $movil) solid $black;
+                                        border-radius: 50%;
+                                        padding: scaleVW(1, $movil);
+                                        &::after{
+                                            width: scaleVW(10, $movil);
+                                            height: scaleVW(10, $movil);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .wpcf7-list-item:last-child{
+                            label{
+                                margin-bottom: 0;
+                            }
+                        }
+                        .wpcf7-list-item.active{
+                            label{
+                                .radio-animate{
+                                    &::after{
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .submit-container{
+                p{
+                    margin-bottom: 0;
+                    position: relative;
+                    input{
+                        width: scaleVW(202, $desktop);
+                        height: scaleVW(68, $desktop);
+                        margin: 0 auto;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: $third;
+                        background: $four;
+                        border: none;
+                        outline: none;
+                        font-family: $bodoni;
+                        font-size: scaleVW(30, $desktop);
+                        line-height: LH(36, 30);
+                        @media(max-width:768px){
+                            width: scaleVW(97.771, $movil);
+                            height: scaleVW(32.913, $movil);
+                            font-size: scaleVW(16, $movil);
+                            line-height: LH(17.42, 16);
+                        }
+                    }
+                    .wpcf7-spinner{
+                        position: absolute;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    img{
+        width: scaleVW(584.1304, $desktop);
+        height: scaleVW(439.0092, $desktop);
+        position: absolute;
+        bottom: 0;
+        right: scaleVW(25, $desktop);
+        transform: translateY(scaleVW(62, $desktop));
+    }
+}

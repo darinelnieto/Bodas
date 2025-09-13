@@ -1,0 +1,12 @@
+{
+    "post_types": {
+       
+    },
+    "taxonomies": {
+        "product_cat":[]
+    },
+    "admin_pages":[
+        "toplevel_page_acf-options-header",
+        "options-theme_page_acf-options-globals-styles"
+    ]
+}

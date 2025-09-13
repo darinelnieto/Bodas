@@ -1,0 +1,22 @@
+@import 'default_theme';
+
+// sajo include zone (don't delete anything below)
+// #SajoPartials
+@import "./partials/globals/header";
+@import "./partials/medellin/shoppings";
+@import "./partials/medellin/restaurants";
+@import "./partials/medellin/colombia";
+@import "./partials/medellin/places";
+@import "./partials/medellin/banner-medellin";
+@import "./partials/globals/footer";
+@import "./partials/home/rsvp";
+@import "./partials/home/countdown";
+@import "./partials/home/hero-banner";
+
+// #SajoTemplates
+@import "./templates/recommendations-template";
+@import "./templates/faqs-template";
+@import "./templates/hotel-template";
+@import "./templates/wedding-details-template";
+@import "./templates/our-history-template";
+@import "./templates/home-template";
