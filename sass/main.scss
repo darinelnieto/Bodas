@@ -2,6 +2,7 @@
 
 // sajo include zone (don't delete anything below)
 // #SajoPartials
+@import "./partials/home/banner-erika-gordon";
 @import "./partials/globals/header";
 @import "./partials/medellin/shoppings";
 @import "./partials/medellin/restaurants";
@@ -14,6 +15,7 @@
 @import "./partials/home/hero-banner";
 
 // #SajoTemplates
+@import "./templates/erika-gordon-template";
 @import "./templates/recommendations-template";
 @import "./templates/faqs-template";
 @import "./templates/hotel-template";

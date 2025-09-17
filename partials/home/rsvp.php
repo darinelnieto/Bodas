@@ -9,8 +9,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 $rsvp = get_field('rsvp_content');
 $img = $rsvp['image'];
+$banner = $rsvp['banner_image'];
 ?>
 <section class="rsvp-partial-39366a" style="background:var(<?= $rsvp['background']; ?>)">
+    <?php if(!empty($banner)): ?>
+        <img src="<?= $banner['url']; ?>" alt="<?= $banner['title']; ?>" width="<?= $banner['width']; ?>" height="<?= $banner['height']; ?>" class="banner">
+    <?php endif; ?>
     <div class="form-content">
         <?php if($rsvp['title']): ?>
             <h2 class="title"><?= $rsvp['title'] ?></h2>

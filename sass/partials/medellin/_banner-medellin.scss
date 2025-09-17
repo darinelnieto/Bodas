@@ -9,24 +9,23 @@
         max-width: scaleVW(1209.517, $desktop);
         margin: 0 auto scaleVW(195, $desktop) auto;
         padding-bottom: 0;
+        position: relative;
         @media(max-width:768px){
             padding: scaleVW(57, $movil) 0;
             max-width: scaleVW(321.0599, $movil);
             margin-bottom: 0;
         }
         h1{
-            color: $primary;
-            font-family: $bodoni;
-            font-size: scaleVW(72, $desktop);
-            line-height: LH(66.4, 72);
-            letter-spacing: scaleVW(14, $desktop);
+            color: $primary; 
+            font-family: $annabelle;
+            font-size: scaleVW(74.27, $desktop);
+            line-height: LH(70, 74.27);
             text-align: center;
-            max-width: scaleVW(929.0898, $desktop);
+            max-width: scaleVW(517.959, $desktop);
             margin: 0 auto scaleVW(120, $desktop) auto;
             @media(max-width:768px){
                 font-size: scaleVW(26, $movil);
                 line-height: LH(25, 26);
-                letter-spacing: scaleVW(4, $movil);
                 max-width: 100%;
                 margin-bottom: scaleVW(33, $movil);
             }

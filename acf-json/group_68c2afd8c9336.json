@@ -160,6 +160,38 @@
                             "parent_repeater": "field_68c2b79341966"
                         },
                         {
+                            "key": "field_68c7fd04c5c90",
+                            "label": "Text color",
+                            "name": "text_color",
+                            "aria-label": "",
+                            "type": "select",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "--main-color": "--main-color",
+                                "--secondary-color": "--secondary-color",
+                                "--third-color": "--third-color",
+                                "--four-color": "--four-color"
+                            },
+                            "default_value": false,
+                            "return_format": "value",
+                            "multiple": 0,
+                            "allow_null": 0,
+                            "allow_in_bindings": 0,
+                            "ui": 0,
+                            "ajax": 0,
+                            "placeholder": "",
+                            "create_options": 0,
+                            "save_options": 0,
+                            "parent_repeater": "field_68c2b79341966"
+                        },
+                        {
                             "key": "field_68c2b85141968",
                             "label": "Text-content",
                             "name": "text-content",
@@ -1076,5 +1108,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757779694
+    "modified": 1757938712
 }

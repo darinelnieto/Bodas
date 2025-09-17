@@ -2,15 +2,11 @@
     position: relative;
     overflow: hidden;
     .last-image{
-        position: absolute;
-        width: scaleVW(371.6629, $desktop);
-        height: scaleVW(404.5318, $desktop);
-        right: scaleVW(68, $desktop);
-        bottom: 0;
-        transform: translateY(scaleVW(38, $desktop));
+        width: 100%;
+        height: auto;
     }
     .title-contain{
-        padding: scaleVW(97, $desktop) 0 scaleVW(113, $desktop) 0;
+        padding: scaleVW(177, $desktop) 0 scaleVW(146, $desktop) 0;
         @media(max-width:768px){
             padding: scaleVW(49, $movil) 0 scaleVW(13, $movil) 0;
         }
@@ -29,30 +25,21 @@
             }
         }
         h1{
-            width: scaleVW(596.5049, $desktop);
-            height: scaleVW(151.9727, $desktop);
-            font-size: scaleVW(72, $desktop);
-            line-height: LH(66.4, 72);
-            letter-spacing: scaleVW(14, $desktop);
-            margin: 0 auto;
+            font-size: scaleVW(74.27, $desktop);
+            line-height: LH(89.13, 74.27);
             margin-bottom: 0;
-            font-family: $bodoni;
+            font-family: $annabelle;
             color: $primary;
-            text-transform: uppercase;
             text-align: center;
             @media(max-width:768px){
-                width: 61.944436vw;
-                height: scaleVW(62.6553, $movil);
                 font-size: scaleVW(26, $movil);
                 line-height: LH(24, 26);
-                letter-spacing: scaleVW(8, $movil);
-                margin-bottom: 0;
             }
         }
     }
     /*======== Wedding detail ========*/
     .wedding-detail{
-        padding: 0 0 scaleVW(294, $desktop) 0;
+        padding: 0 0 scaleVW(249, $desktop) 0;
         @media(max-width:768px){
             padding-bottom: scaleVW(77, $movil);
         }
@@ -132,8 +119,8 @@
                 p{
                     font-family: $bodoni;
                     color: $primary;
-                    font-size: scaleVW(42.7139, $desktop);
-                    line-height: LH(101.74, 42.7139);
+                    font-size: scaleVW(36, $desktop);
+                    line-height: LH(101.74, 36);
                     margin-bottom: scaleVW(52, $desktop);
                     font-style: italic;
                 }
@@ -163,7 +150,7 @@
                 font-style: italic;
                 font-family: $bodoni;
                 color: $third;
-                background: $primary;
+                background: $secondary;
                 text-decoration: none;
                 transition: .2s;
                 &:hover{
@@ -191,7 +178,7 @@
                     font-family: $bodoni;
                     color: $primary;
                     font-size: scaleVW(36, $desktop);
-                    line-height: LH(54, 36);
+                    line-height: LH(40, 36);
                     font-style: italic;
                 }
                 a{
@@ -200,6 +187,20 @@
                 }
                 p:last-child{
                     margin-bottom: 0;
+                }
+                .women{
+                    width: scaleVW(1610.5645, $desktop);
+                    height: scaleVW(485, $desktop);
+                    object-fit: cover;
+                    object-position: center;
+                    margin: 0 auto;
+                }
+                .men{
+                    width: scaleVW(1387.6793, $desktop);
+                    height: scaleVW(485, $desktop);
+                    object-fit: cover;
+                    object-position: center;
+                    margin: 0 auto;
                 }
                 @media(max-width:768px){
                     h4{
@@ -210,8 +211,13 @@
                     }
                     p{
                         font-size: scaleVW(16, $movil);
-                        line-height: LH(40.92, 16);
+                        line-height: LH(21, 16);
                         margin-bottom: scaleVW(19, $movil);
+                    }
+                    .men, .women{
+                        width: 100%;
+                        height: scaleVW(110, $movil);
+                        object-position: top;
                     }
                 }
             }

@@ -1,15 +1,19 @@
 .rsvp-partial-39366a {
     position: relative;
-    padding: scaleVW(194, $desktop) 0;
     overflow: hidden;
-    @media(max-width:768px){
-        padding: scaleVW(48, $movil) scaleVW(27, $movil);
+    .banner{
+        width: 100%;
+        height: scaleVW(697.5216, $desktop);
+        object-fit: cover;
+        object-position: center;
     }
     .form-content{
         width: scaleVW(728, $desktop);
         margin: 0 auto;
+        padding: scaleVW(194, $desktop) 0;
         @media(max-width:768px){
             width: 100%;
+            padding: scaleVW(48, $movil) scaleVW(27, $movil);
         }
         .title{
             color: $primary;
@@ -182,7 +186,7 @@
                         align-items: center;
                         justify-content: center;
                         color: $third;
-                        background: $four;
+                        background: $secondary;
                         border: none;
                         outline: none;
                         font-family: $bodoni;
@@ -205,7 +209,7 @@
             }
         }
     }
-    img{
+    .main-image{
         width: scaleVW(584.1304, $desktop);
         height: scaleVW(439.0092, $desktop);
         position: absolute;

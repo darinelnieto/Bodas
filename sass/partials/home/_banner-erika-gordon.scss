@@ -1,0 +1,137 @@
+.banner-erika-gordon-partial-bae786 {
+    padding: scaleVW(149, $desktop) 0 scaleVW(85, $desktop) 0;
+    @media(max-width:768px){
+        padding-top: scaleVW(50, $movil);
+        padding-bottom: scaleVW(50, $movil);
+    }
+    .content{
+        width: scaleVW(1035.8303, $desktop);
+        margin: 0 auto;
+        @media(max-width:768px){
+            width: scaleVW(390, $movil);
+        }
+        .image-contain{
+            position: relative;
+            text-align: center;
+            img{
+                width: scaleVW(818, $desktop);
+                height: scaleVW(1090.6667, $desktop);
+                object-fit: cover;
+                object-position: center;
+                @media(max-width:768px){
+                    width: scaleVW(280.1832, $movil);
+                    height: scaleVW(373.5777, $movil);
+                }
+            }
+            h1{
+                -webkit-text-fill-color: transparent;
+                color: transparent;
+                font-family: $annabelle;
+                -webkit-background-clip: text;
+                background-clip: text;
+                background-size: cover;
+                background-position: center;
+                font-size: scaleVW(145, $desktop);
+                line-height: LH(174, 145);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                margin-bottom: 0;
+                @media(max-width:768px){
+                    font-size: scaleVW(50, $movil);
+                    line-height: LH(60, 50);
+                }
+            }
+        }
+        h2{
+            margin-top: scaleVW(52, $desktop);
+            color: $third;
+            font-size: scaleVW(44.66, $desktop);
+            line-height: LH(53.59, 44.66);
+            text-align: center;
+            font-family: $bodoni;
+            font-weight: 400;
+            span{
+                font-family: $pinyong;
+                font-size: scaleVW(37.26, $desktop);
+                line-height: LH(44.72, 37.26);
+            }
+            @media(max-width:768px){
+                margin-top: scaleVW(32, $movil);
+                font-size: scaleVW(25.49, $movil);
+                line-height: LH(30.59, 25.49);
+                span{
+                    font-size: scaleVW(21.27, $movil);
+                    line-height: LH(25.53, 21.27);
+                }
+            }
+        }
+        .son-contain{
+            width:350px;
+            margin:0 auto;
+        }
+        @media(max-width:640px){
+            .son-contain{
+                width:270px;
+            }
+        }
+        @media(max-width:768px){
+            #header-wrapper h2{
+                font-size:calc(1rem + .9vw) !important;
+            }
+        }
+        .mejs-time.mejs-duration-container, .mejs-time.mejs-currenttime-container, .mejs-controls a.mejs-horizontal-volume-slider{
+            display:none;
+        }
+        .mejs-container, .mejs-container .mejs-controls, .mejs-embed, .mejs-embed body {
+            background: transparent !important;
+        }
+        .mejs-button{
+            color:rgb(106,86,80) !important;
+        }
+        .mejs-controls .mejs-time-rail .mejs-time-current{
+            background:rgb(106,86,80) !important;
+        }
+        #item-3.list-two{
+            padding-top:0 !important;
+            padding-bottom:0;
+        }
+        .list-two .image-contain{
+            text-align:center;
+        }
+        .list-two .image-contain img{
+            max-width:200px;
+        }
+        .itinerary-partial-d9f4c7 #item-3 .date p {
+            font-family: "Bodoni Moda";
+            font-style:italic;
+        }
+        .list-two .main-texts::after{
+            display:none
+        }
+        #item-3 .date{
+            position:relative;
+        }
+        #item-3 .date::after{
+            content: "";
+            width: 185px;
+            height: 1px;
+            background: var(--main-color);
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 1rem);
+        }
+        .list-two .date::after{
+            display:none;
+        }
+        .list-two .the-itinerary{
+            margin-bottom:2rem !important;
+        }
+        #item-4{
+            padding-top:2rem;
+        }
+    }
+}

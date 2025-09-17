@@ -23,8 +23,8 @@ $repeat = $banner['transportations_and_climate'];
         <div class="repeat-content <?= $item['text-content']; ?>">
             <span class="before" style="background:var(<?= $item['background']; ?>)"></span>
             <div class="content">
-                <h2 class="title"><?= $item['title'] ?? ''; ?></h2>
-                <p class="description"><?= $item['description'] ?? ''; ?></p>
+                <h2 class="title" style="color:var(<?= $item['text_color']; ?>);"><?= $item['title'] ?? ''; ?></h2>
+                <p class="description" style="color:var(<?= $item['text_color']; ?>);"><?= $item['description'] ?? ''; ?></p>
             </div>
         </div>
     <?php endforeach; endif; ?>
