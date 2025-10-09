@@ -1,0 +1,91 @@
+.intercale-content-partial-600cd4 {
+    background: $third;
+    display: flex;
+    flex-direction: column;
+    gap: scaleVW(183, $desktop);
+    @media(max-width:768px){
+        gap: scaleVW(50, $movil);
+    }
+    .content-item{
+        width: scaleVW(1688, $desktop);
+        min-height: scaleVW(400, $desktop);
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: scaleVW(30, $desktop) 0;
+        @media(max-width:768px){
+            width: scaleVW(343.0826, $movil);
+            height: auto;
+            padding: scaleVW(40, $movil) 0;
+        }
+        span{
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #aca29a;
+        }
+        .content{
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 1;
+            width: scaleVW(1468.2877, $desktop);
+            margin: 0 auto;
+            justify-content: space-between;
+            @media(max-width:768px){
+                text-align: right;
+            }
+            h2{
+                color: $primary;
+                font-size: scaleVW(60, $desktop);
+                line-height: LH(72, 60);
+                margin: 0;
+                font-family: $title;
+                width: scaleVW(300, $desktop);
+            }
+            p{
+                font-family: $title;
+                color: $primary;
+                margin: 0;
+                height: auto;
+                font-size: scaleVW(22, $desktop);
+                line-height: LH(26, 22);
+                width: scaleVW(1100.2163, $desktop);
+                a{
+                    color: $primary;
+                }
+            }
+            @media(max-width:768px){
+                flex-direction: column;
+                width: scaleVW(293.3649, $movil);
+                padding: scaleVW(20, $movil) 0;
+                h2{
+                    font-size: scaleVW(24, $movil);
+                    line-height: LH(28.4, 24);
+                    margin-bottom: scaleVW(15, $movil);
+                    width: 100%;
+                }
+                p{
+                    font-size: scaleVW(16, $movil);
+                    line-height: LH(19.2, 16);
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .right{
+        margin-left: auto;
+        @media(max-width:768px){
+            margin-bottom: scaleVW(50, $movil);
+            p, h2{
+                text-align: left;
+                width: 100%;
+            }
+        }
+    }
+}

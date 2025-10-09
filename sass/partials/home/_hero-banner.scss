@@ -14,7 +14,7 @@
         }
     }
     .wedding-date{
-        font-family: $big_caslon;
+        font-family: $title;
         color: $primary;
         font-size: scaleVW(199.73, $desktop);
         line-height: LH(239.68, 199.73);
@@ -44,7 +44,7 @@
         }
     }
     .main-text{
-        font-family: $bodoni;
+        font-family: $title;
         color: $primary;
         font-size: scaleVw(69.63, $desktop);
         line-height: LH(71.56, 69.63);
@@ -57,7 +57,7 @@
     }
     .secondary-text{
         color: $primary;
-        font-family: $bodoni;
+        font-family: $title;
         font-size: scaleVW(39.46, $desktop);
         line-height: LH(47.36, 39.46);
         margin-bottom: scaleVW(55, $desktop);

@@ -11,8 +11,7 @@
             font-size: scaleVW(60, $desktop);
             line-height: LH(72, 60);
             color: $primary;
-            font-family: $big_caslon;
-            letter-spacing: scaleVW(10, $desktop);
+            font-family: $title;
             margin-bottom: scaleVW(100, $desktop);
             text-align: center;
         }
@@ -22,7 +21,6 @@
                 font-size: scaleVW(26, $movil);
                 line-height: LH(31.2, 26);
                 margin-bottom: scaleVW(45, $movil);
-                letter-spacing: scaleVW(7, $movil);
             }
         }
         .stores{
@@ -44,7 +42,7 @@
                     h3{
                         font-size: scaleVW(24, $desktop);
                         line-height: LH(28.8, 24);
-                        font-family: $bodoni;
+                        font-family: $title;
                         font-weight: 600;
                         width: scaleVW(322.1043, $desktop);
                         margin: 0 auto;
@@ -52,7 +50,7 @@
                         text-align: center;
                     }
                     .description{
-                        font-family: $bodoni;
+                        font-family: $title;
                         font-weight: 400;
                         font-size: scaleVW(21, $desktop);
                         line-height: LH(25.2, 21);

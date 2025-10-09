@@ -51,11 +51,11 @@ $bottom = $end['bottom_content'];
                             </div>
                         <?php endif; if($hotel['primary_button']): $cta = $hotel['primary_button']; ?>
                             <a href="<?= $cta['url']; ?>" target="<?= $cta['target']; ?>" class="primary-button cta">
-                                <?php if(get_bloginfo("language") == "en-US"): ?>Book your stay<?php else: ?>Reserva tu estadía<?php endif; ?>
+                                <?php if(get_bloginfo("language") == "en-US"): ?>More info<?php else: ?>Más info<?php endif; ?>
                             </a>
                         <?php endif; if($hotel['secondary_button']): $cta = $hotel['secondary_button']; ?>
                             <a href="<?= $cta['url']; ?>" target="<?= $cta['target']; ?>" class="secondary-button cta">
-                                <?php if(get_bloginfo("language") == "en-US"): ?>More info<?php else: ?>Más info<?php endif; ?>
+                                Web
                             </a>
                         <?php endif; ?>
                     </div>

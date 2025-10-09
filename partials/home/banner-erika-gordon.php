@@ -16,10 +16,15 @@ $audio_url = $banner['son'];
         <?php if(!empty($img)): ?>
             <div class="image-contain">            
                 <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" width="<?= $img['width']; ?>" height="<?= $img['height']; ?>" class="main-image">
-                <h1 style="background-image:url(<?= get_template_directory_uri() ?>/images/text-color.jpg);"><?= the_title(); ?></h1>
             </div>
+        <?php endif; if(!empty($banner['title'])): ?>
+            <h1><?= $banner['title']; ?></h1>
+        <?php endif; if(!empty($banner['date'])): ?>
+            <h3><?= $banner['date']; ?></h3>
         <?php endif; if(!empty($banner['description'])): ?>
-            <h2><?= $banner['description']; ?></h2>
+            <div class="description">
+                <?= $banner['description']; ?>
+            </div>
         <?php endif; if (!empty($audio_url)): ?>
             <div class="son-contain">
                 <?= wp_audio_shortcode(array('src' => $audio_url)); ?>

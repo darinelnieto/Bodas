@@ -33,6 +33,8 @@ if ( ! defined( 'ABSPATH' ) ) {
   $secondaryColor = get_field('secondary_color', 'option');
   $third_color = get_field('third_color', 'option');
   $four_color = get_field('four_color', 'option');
+  $five_color = get_field('five_color', 'option');
+  $bg_img = get_field('background', 'option');
 ?>
 <style>
    :root {
@@ -41,9 +43,10 @@ if ( ! defined( 'ABSPATH' ) ) {
         --third-color: <?= $third_color; ?>;
         --four-color: <?= $four_color; ?>;
         --five-color: #cda9d1;
+        
     }
 </style>
-<div id="page"> <!-- +Page container -->
+<div id="page" style="background-image:url(<?= $bg_img['url']; ?>); background-size:contain;background-repeat:repeat;"> <!-- +Page container -->
 
   <header id="header-wrapper" class="<?php if(is_front_page() === true): ?>home<?php endif; ?>">
     <?php get_template_part('partials/globals/header'); ?>

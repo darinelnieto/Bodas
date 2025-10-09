@@ -19,23 +19,21 @@
             }
             h2{
                 color: $primary;
-                font-family: $big_caslon;
+                font-family: $title;
                 color: $primary;
                 font-size: scaleVW(60, $desktop);
                 line-height: LH(72, 60);
                 margin-bottom: scaleVW(154, $desktop);
-                letter-spacing: scaleVW(10, $desktop);
                 @media(max-width:768px){
                     font-size: scaleVW(26, $movil);
                     line-height: LH(31.2, 26);
                     margin-bottom: scaleVW(20, $movil);
-                    letter-spacing: scaleVW(7, $movil);
                 }
             }
             p{
                 color: $primary;
                 margin: 0;
-                font-family: $bodoni;
+                font-family: $title;
                 font-style: italic;
                 font-size: scaleVW(34.12, $desktop);
                 line-height: LH(40.95, 34.12);
@@ -77,13 +75,13 @@
                         font-size: scaleVW(21, $desktop);
                         line-height: LH(25.2, 21);
                         color: $primary;
-                        font-family: $bodoni;
+                        font-family: $title;
                         text-transform: uppercase;
                         font-style: italic;
                         margin-bottom: scaleVW(35, $desktop);
                     }
                     p{
-                        font-family: $bodoni;
+                        font-family: $title;
                         color: $primary;
                         font-style: italic;
                         font-size: scaleVW(21, $desktop);

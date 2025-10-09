@@ -56,11 +56,11 @@ add_theme_support( 'custom-logo' );
 /**
  * Install latest jQuery version 3.5.1
  */
-if (!is_admin()) {
-  wp_deregister_script('jquery');
-  wp_register_script('jquery', ("https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"), false);
-  wp_enqueue_script('jquery');
-}
+// if (!is_admin()) {
+//   wp_deregister_script('jquery');
+//   wp_register_script('jquery', ("https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"), false);
+//   wp_enqueue_script('jquery');
+// }
 
 // Options page
 if (function_exists('acf_add_options_page')){

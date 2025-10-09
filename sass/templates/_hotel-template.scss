@@ -26,7 +26,7 @@
                 width: scaleVW(324.3522, $movil);
             }
             h1{
-                font-family: $bodoni;
+                font-family: $title;
                 color: $primary;
                 font-size: scaleVW(72, $desktop);
                 line-height: LH(66.4, 72);
@@ -40,7 +40,7 @@
                 }
             }
             p{
-                font-family: $bodoni;
+                font-family: $title;
                 font-style: italic;
                 font-size: scaleVW(24, $desktop);
                 line-height: LH(28.8, 24);
@@ -55,9 +55,15 @@
     }
     /*=========== Hotel section ============*/
     .hotels{
+        display: flex;
+        flex-wrap: wrap;
+        gap: scaleVW(81, $desktop);
+        width: scaleVW(1681, $desktop);
+        padding-bottom: scaleVW(150, $desktop);
+        margin: 0 auto;
         .title{
             color: $primary;
-            font-family: $big_caslon;
+            font-family: $title;
             font-size: scaleVW(48, $desktop);
             line-height: LH(57.6, 48);
             letter-spacing: scaleVW(4, $desktop);
@@ -71,10 +77,9 @@
         }
         .hotel{
             width: scaleVW(800, $desktop);
-            margin: 0 auto;
-            padding-bottom: scaleVW(243, $desktop);
             @media(max-width:768px){
-                width: scaleVW(336.1891, $movil);
+                width: scaleVW(333, $movil);
+                margin-bottom: scaleVW(50, $movil);
             }
             .main-image{
                 width: scaleVW(800, $desktop);
@@ -93,8 +98,8 @@
                     width: scaleVW(310.1345, $movil);
                 }
                 .name{
-                    font-family: $bodoni;
-                    color: $primary;
+                    font-family: $title;
+                    color: #404041;
                     font-style: italic;
                     font-size: scaleVW(39.46, $desktop);
                     line-height: LH(47.36, 39.46);
@@ -107,9 +112,8 @@
                 }
                 .google-maps{
                     display: flex;
-                    font-family: $bodoni;
-                    font-style: italic;
-                    color: $primary;
+                    font-family: $title;
+                    color: #404041;
                     font-size: scaleVW(24, $desktop);
                     line-height: LH(28.8, 24);
                     margin-bottom: scaleVW(26, $desktop);
@@ -120,12 +124,12 @@
                     }
                 }
                 .description{
-                    font-family: $bodoni;
-                    color: $primary;
-                    font-style: italic;
+                    font-family: $title;
+                    color: #404041;
                     font-size: scaleVW(24, $desktop);
                     line-height: LH(28.8, 24);
                     margin-bottom: scaleVW(13, $desktop);
+                    min-height: scaleVW(247.3407, $desktop);
                     @media(max-width:768px){
                         font-size: scaleVW(16, $movil);
                         line-height: LH(19.2, 16);
@@ -138,7 +142,7 @@
                     justify-content: center;
                     width: scaleVW(738, $desktop);
                     height: scaleVW(90, $desktop);
-                    font-family: $bodoni;
+                    font-family: $title;
                     font-style: italic;
                     font-size: scaleVW(39.46, $desktop);
                     line-height: LH(47.36, 39.46);
@@ -151,17 +155,16 @@
                     }
                 }
                 .primary-button{
-                    background: $primary;
-                    color: $third;
+                    background: $four;
+                    color: #545454;
                     margin-bottom: scaleVW(20, $desktop);
                     @media(max-width:768px){
                         margin-bottom: scaleVW(8, $movil);
                     }
                 }
                 .secondary-button{
-                    background: transparent;
-                    border: scaleVW(1.5, $desktop) solid #cda9d1;
-                    color: $primary;
+                    background: $secondary;
+                    color: #545454;
                     @media(max-width:768px){
                         border: scaleVW(1.5, $movil) solid #cda9d1;
                     }
@@ -171,9 +174,10 @@
     }
     /*========= End content =========*/
     .end-content{
+        display: none;
         h2{
             color: $primary;
-            font-family: $big_caslon;
+            font-family: $title;
             font-size: scaleVW(48, $desktop);
             line-height: LH(57.6, 48);
             letter-spacing: scaleVW(4, $desktop);
@@ -209,7 +213,7 @@
                         color: $primary;
                         font-size: scaleVW(24, $desktop);
                         line-height: LH(28.8, 24);
-                        font-family: $bodoni;
+                        font-family: $title;
                         font-style: italic;
                         font-weight: 400;
                         position: relative;
@@ -233,7 +237,7 @@
                     color: $primary;
                     font-size: scaleVW(24, $desktop);
                     line-height: LH(28.8, 24);
-                    font-family: $bodoni;
+                    font-family: $title;
                     font-style: italic;
                     font-weight: 400;
                 }
@@ -299,7 +303,7 @@
                         color: $primary;
                         font-size: scaleVW(24, $desktop);
                         line-height: LH(28.8, 24);
-                        font-family: $bodoni;
+                        font-family: $title;
                         font-style: italic;
                         font-weight: 400;
                         position: relative;
@@ -323,7 +327,7 @@
                     color: $primary;
                     font-size: scaleVW(24, $desktop);
                     line-height: LH(28.8, 24);
-                    font-family: $bodoni;
+                    font-family: $title;
                     font-style: italic;
                     font-weight: 400;
                 }
@@ -358,7 +362,7 @@
                     color: $primary;
                     font-size: scaleVW(24, $desktop);
                     line-height: LH(28.8, 24);
-                    font-family: $bodoni;
+                    font-family: $title;
                     font-style: italic;
                     font-weight: 400;
                 }

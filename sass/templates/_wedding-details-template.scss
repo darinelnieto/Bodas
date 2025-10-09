@@ -1,34 +1,16 @@
 #wedding-details-template-f21090 {
     position: relative;
     overflow: hidden;
-    .last-image{
-        width: 100%;
-        height: auto;
-    }
     .title-contain{
-        padding: scaleVW(177, $desktop) 0 scaleVW(146, $desktop) 0;
+        padding: scaleVW(113, $desktop) 0 0 0;
         @media(max-width:768px){
             padding: scaleVW(49, $movil) 0 scaleVW(13, $movil) 0;
         }
-        position: relative;
-        .main-image{
-            position: absolute;
-            width: scaleVW(670.6731, $desktop);
-            height: scaleVW(490.375, $desktop);
-            left: - scaleVW(102, $desktop);
-            top: scaleVW(44, $desktop);
-            @media(max-width:768px){
-                width: scaleVw(134.0826, $movil);
-                height: scaleVW(98.0369, $movil);
-                left: - scaleVW(60, $movil);
-                top: scaleVW(44, $movil);
-            }
-        }
         h1{
-            font-size: scaleVW(74.27, $desktop);
-            line-height: LH(89.13, 74.27);
+            font-size: scaleVW(92.72, $desktop);
+            line-height: LH(111.27, 92.72);
             margin-bottom: 0;
-            font-family: $annabelle;
+            font-family: $title;
             color: $primary;
             text-align: center;
             @media(max-width:768px){
@@ -38,192 +20,129 @@
         }
     }
     /*======== Wedding detail ========*/
-    .wedding-detail{
-        padding: 0 0 scaleVW(249, $desktop) 0;
-        @media(max-width:768px){
-            padding-bottom: scaleVW(77, $movil);
-        }
-        .title-content{
-            @media(max-width:768px){
-                padding-left: scaleVW(27, $movil);
-                padding-right: scaleVW(27, $movil);
+    .wedding-details{
+        .item{
+            padding: scaleVW(141, $desktop) 0;
+            width: scaleVW(1605.895, $desktop);
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            gap: scaleVW(100, $desktop);
+            align-items: center;
+            &::after{
+                content: '';
+                width: scaleVW(1386.1476, $desktop);
+                height: scaleVW(1, $desktop);
+                background: $black;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
             }
-            h2{
-                font-family: $big_caslon;
-                color: $primary;
-                font-size: scaleVW(168.69, $desktop);
-                line-height: LH(202.43, 168.69);
-                display: flex;
-                align-items: center;
-                gap: scaleVW(59, $desktop);
-                justify-content: center;
-                height: scaleVW(211.46, $desktop);
-                margin-bottom: scaleVW(74, $desktop);
-                span{
-                    display: block;
-                    width: scaleVW(19.4127, $desktop);
-                    height: scaleVW(19.4127, $desktop);
+            .left{
+                width: scaleVW(279.8633, $desktop);
+                margin-bottom: 4vw;
+                p{
+                    color: $primary;
+                    font-family: $title;
+                    font-size: scaleVW(55.28, $desktop);
+                    line-height: LH(66.33, 55.28);
+                    margin: 0;
+                }
+            }
+            .center{
+                position: relative;
+                .replace-image{
+                    width: scaleVW(910, $desktop);
+                    height: scaleVW(602, $desktop);
                     background: $four;
-                    border-radius: 50%;
-                    transform: translateY(1vw);
+                    display: block;
                 }
-                @media(max-width:768px){
-                    font-size: scaleVW(33.73, $movil);
-                    line-height: LH(40.47, 33.73);
-                    height: scaleVW(42.2756, $movil);
-                    margin-bottom: scaleVW(29, $movil);
-                    span{
-                        width: scaleVW(3.2779, $movil);
-                        height: scaleVW(3.2779, $movil);
+                img{
+                    width: scaleVW(910, $desktop);
+                    height: scaleVW(602, $desktop);
+                    object-position: center;
+                    object-fit: cover;
+                }
+                .text{
+                    transform: translateY(- scaleVW(22, $desktop));
+                    text-align: center;
+                    @media(max-width:768px){
+                        transform: translateY(- scaleVW(7, $movil));
+                    }
+                    h2{
+                        font-family: $title;
+                        color: #3f3f3f;
+                        font-size: scaleVW(65.78, $desktop);
+                        line-height: 1;
+                        margin-bottom: 0;
+                        font-weight: 500;
+                        @media(max-width:768px){
+                            font-size: scaleVW(18, $movil);
+                        }
+                    }
+                    h3{
+                        font-family: $title;
+                        color: $primary;
+                        font-size: scaleVW(55.28, $desktop);
+                        line-height: 1;
+                        margin-bottom: 0;
+                        font-weight: 500;
+                        @media(max-width:768px){
+                            font-size: scaleVW(16, $movil);
+                        }
                     }
                 }
             }
-            h3{
+            .right{
+                width: scaleVW(279.8633, $desktop);
                 text-align: center;
-                font-family: $big_caslon;
-                color: $primary;
-                font-size: scaleVW(48, $desktop);
-                line-height: LH(57.6, 48);
-                height: scaleVW(74.1113, $desktop);
-                margin-bottom: scaleVW(126, $desktop);
-                @media(max-width:768px){
-                    font-size: scaleVW(20, $movil);
-                    line-height: LH(24, 20);
-                    height: scaleVW(24.7039, $movil);
-                    margin-bottom: scaleVW(20, $movil);
+                margin-bottom: 4vw;
+                p{
+                    color: $primary;
+                    font-family: $title;
+                    font-size: scaleVW(55.28, $desktop);
+                    line-height: LH(66.33, 55.28);
+                    margin: 0;
                 }
             }
         }
-        .event-image{
-            height: scaleVW(978, $desktop);
-            width: 100%;
-            object-fit: cover;
-            object-position: center;
-            margin-bottom: scaleVW(121, $desktop);
-        }
-        .end-content{
-            @media(max-width:768px){
-                padding-left: scaleVW(27, $movil);
-                padding-right: scaleVW(27, $movil);
-            }
-            .event-location{
-                text-align: center;
-                h4{
-                    color: $primary;
-                    font-family: $big_caslon;
-                    font-size: scaleVW(48, $desktop);
-                    line-height: LH(57.6, 48);
-                    height: scaleVW(74.1113, $desktop);
-                    margin-bottom: scaleVw(38, $desktop);
-                }
-                p{
-                    font-family: $bodoni;
-                    color: $primary;
-                    font-size: scaleVW(36, $desktop);
-                    line-height: LH(101.74, 36);
-                    margin-bottom: scaleVW(52, $desktop);
-                    font-style: italic;
-                }
-                @media(max-width:768px){
-                    h4{
-                        font-size: scaleVW(19.31, $movil);
-                        line-height: LH(23.17, 19.31);
-                        height: scaleVW(29.8073, $movil);
-                        margin-bottom: scaleVw(16, $movil);
-                    }
-                    p{
-                        font-size: scaleVW(16, $movil);
-                        line-height: LH(40.92, 16);
-                        margin-bottom: scaleVW(19, $movil);
-                    }
-                }
-            }
-            .cta{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: scaleVW(738, $desktop);
-                height: scaleVW(90, $desktop);
-                margin: 0 auto scaleVW(132, $desktop) auto;
-                font-size: scaleVW(39.46, $desktop);
-                line-height: LH(47.36, 39.46);
-                font-style: italic;
-                font-family: $bodoni;
-                color: $third;
-                background: $secondary;
-                text-decoration: none;
-                transition: .2s;
-                &:hover{
-                    transform: scale(.9);
-                }
-                @media(max-width:768px){
-                    width: scaleVw(296.8197, $movil);
-                    height: scaleVW(36.1975, $movil);
-                    margin: 0 auto scaleVW(52, $movil) auto;
-                    font-size: scaleVW(16, $movil);
-                    line-height: LH(19.2, 16);
-                }
-            }
-            .description{
-                text-align: center;
-                h4{
-                    color: $primary;
-                    font-family: $big_caslon;
-                    font-size: scaleVW(48, $desktop);
-                    line-height: LH(57.6, 48);
-                    height: scaleVW(74.1113, $desktop);
-                    margin-bottom: scaleVw(38, $desktop);
-                }
-                p{
-                    font-family: $bodoni;
-                    color: $primary;
-                    font-size: scaleVW(36, $desktop);
-                    line-height: LH(40, 36);
-                    font-style: italic;
-                }
-                a{
-                    color: $primary;
-                    text-decoration: none;
-                }
-                p:last-child{
-                    margin-bottom: 0;
-                }
-                .women{
-                    width: scaleVW(1610.5645, $desktop);
-                    height: scaleVW(485, $desktop);
-                    object-fit: cover;
-                    object-position: center;
-                    margin: 0 auto;
-                }
-                .men{
-                    width: scaleVW(1387.6793, $desktop);
-                    height: scaleVW(485, $desktop);
-                    object-fit: cover;
-                    object-position: center;
-                    margin: 0 auto;
-                }
-                @media(max-width:768px){
-                    h4{
-                        font-size: scaleVW(19.31, $movil);
-                        line-height: LH(23.17, 19.31);
-                        height: scaleVW(29.8073, $movil);
-                        margin-bottom: scaleVw(16, $movil);
-                    }
-                    p{
-                        font-size: scaleVW(16, $movil);
-                        line-height: LH(21, 16);
-                        margin-bottom: scaleVW(19, $movil);
-                    }
-                    .men, .women{
-                        width: 100%;
-                        height: scaleVW(110, $movil);
-                        object-position: top;
-                    }
-                }
+        .item:last-child{
+            &::after{
+                display: none;
             }
         }
     }
-    .wedding-detail:last-child{
-        padding-bottom: scaleVW(93, $desktop);
+    // Description
+    .description{
+        padding-bottom: scaleVW(141, $desktop);
+        @media(max-width:768px){
+            padding-bottom: scaleVW(40, $movil);
+        }
+        .content{
+            width: scaleVW(1292, $desktop);
+            margin: 0 auto;
+            text-align: center;
+            h2{
+                font-size: scaleVW(65.78, $desktop);
+                line-height: LH(78.93, 65.78);
+                font-family: $title;
+                color: #3f3f3f;
+                margin-bottom: scaleVW(43, $desktop);
+            }
+            p{
+                @media(max-width:768px){
+                    height: max-content;
+                    margin: 0;
+                }
+            }
+            h3{
+                font-size: scaleVW(55.28, $desktop);
+                line-height: LH(66.33, 55.28);
+                font-family: $title;
+                color: $primary;
+                margin-bottom: 0;
+            }
+        }
     }
 }

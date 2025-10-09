@@ -1,6 +1,6 @@
 {
     "key": "group_68bddf5ca1798",
-    "title": "Wedding details",
+    "title": "[:es]Wedding details[:]",
     "fields": [
         {
             "key": "field_68bddf5cbc415",
@@ -34,58 +34,6 @@
             "save_options": 0
         },
         {
-            "key": "field_68bddf9bbc416",
-            "label": "Main image",
-            "name": "main_image",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "allow_in_bindings": 0,
-            "preview_size": "medium"
-        },
-        {
-            "key": "field_68bec279d0faa",
-            "label": "Last image",
-            "name": "last_image",
-            "aria-label": "",
-            "type": "image",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "return_format": "array",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "allow_in_bindings": 0,
-            "preview_size": "medium"
-        },
-        {
             "key": "field_68bddfa4bc417",
             "label": "wedding details",
             "name": "wedding_details",
@@ -108,31 +56,9 @@
             "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_68bdfd83bc418",
-                    "label": "Event date",
-                    "name": "event_date",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "<span><\/span> <span><\/span>",
-                    "maxlength": "",
-                    "allow_in_bindings": 0,
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_68bddfa4bc417"
-                },
-                {
-                    "key": "field_68bdfdc9bc419",
-                    "label": "Event name",
-                    "name": "event_name",
+                    "key": "field_68e1c31e53c40",
+                    "label": "[:es]Hour[:]",
+                    "name": "hour",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -152,9 +78,31 @@
                     "parent_repeater": "field_68bddfa4bc417"
                 },
                 {
-                    "key": "field_68bdfdeebc41a",
-                    "label": "Event image",
-                    "name": "event_image",
+                    "key": "field_68e1c32553c41",
+                    "label": "[:es]Place[:]",
+                    "name": "place",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_68bddfa4bc417"
+                },
+                {
+                    "key": "field_68e1c35453c42",
+                    "label": "[:es]Main image[:]",
+                    "name": "main_image",
                     "aria-label": "",
                     "type": "image",
                     "instructions": "",
@@ -179,9 +127,9 @@
                     "parent_repeater": "field_68bddfa4bc417"
                 },
                 {
-                    "key": "field_68bdfe38bc41c",
-                    "label": "Title after event image",
-                    "name": "title_after_event_image",
+                    "key": "field_68e1c38253c43",
+                    "label": "[:es]Event name[:]",
+                    "name": "event_name",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -201,9 +149,9 @@
                     "parent_repeater": "field_68bddfa4bc417"
                 },
                 {
-                    "key": "field_68bdfe1ebc41b",
-                    "label": "Event location",
-                    "name": "event_location",
+                    "key": "field_68e1c3ab53c44",
+                    "label": "[:es]Date[:]",
+                    "name": "date",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -214,55 +162,36 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
+                    "default_value": "[:es]<span>.<\/span>[:]",
                     "maxlength": "",
                     "allow_in_bindings": 0,
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
-                    "parent_repeater": "field_68bddfa4bc417"
-                },
-                {
-                    "key": "field_68bdfe56bc41d",
-                    "label": "Cta",
-                    "name": "cta",
-                    "aria-label": "",
-                    "type": "link",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "allow_in_bindings": 0,
-                    "parent_repeater": "field_68bddfa4bc417"
-                },
-                {
-                    "key": "field_68bdfe81bc41e",
-                    "label": "Description",
-                    "name": "description",
-                    "aria-label": "",
-                    "type": "wysiwyg",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "allow_in_bindings": 0,
-                    "tabs": "all",
-                    "toolbar": "full",
-                    "media_upload": 1,
-                    "delay": 0,
                     "parent_repeater": "field_68bddfa4bc417"
                 }
             ]
+        },
+        {
+            "key": "field_68e1d11e0b869",
+            "label": "[:es]Description[:]",
+            "name": "description",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -283,5 +212,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757332105
+    "modified": 1759629722
 }

@@ -18,9 +18,10 @@
         }
         .item-count{
             span{
-                font-family: $bodoni;
+                font-family: $title;
                 font-size: scaleVW(30, $desktop);
                 line-height: LH(36, 30);
+                color: $text_vg;
                 @media(max-width:768px){
                     font-size: scaleVW(12, $movil);
                     line-height: LH(36, 12);

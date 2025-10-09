@@ -1,10 +1,10 @@
 {
     "key": "group_68a3059f93443",
-    "title": "Globals styles",
+    "title": "[:es]Globals styles[:]",
     "fields": [
         {
             "key": "field_68bc5a3f6bd7e",
-            "label": "Primary color",
+            "label": "[:es]Primary color[:]",
             "name": "primary_color",
             "aria-label": "",
             "type": "color_picker",
@@ -17,13 +17,13 @@
                 "id": ""
             },
             "default_value": "",
-            "enable_opacity": 0,
+            "enable_opacity": 1,
             "return_format": "string",
             "allow_in_bindings": 0
         },
         {
             "key": "field_68bc5a586bd7f",
-            "label": "Secondary color",
+            "label": "[:es]Secondary color[:]",
             "name": "secondary_color",
             "aria-label": "",
             "type": "color_picker",
@@ -36,13 +36,13 @@
                 "id": ""
             },
             "default_value": "",
-            "enable_opacity": 0,
+            "enable_opacity": 1,
             "return_format": "string",
             "allow_in_bindings": 0
         },
         {
             "key": "field_68bc5a636bd80",
-            "label": "Third color",
+            "label": "[:es]Third color[:]",
             "name": "third_color",
             "aria-label": "",
             "type": "color_picker",
@@ -55,13 +55,13 @@
                 "id": ""
             },
             "default_value": "",
-            "enable_opacity": 0,
+            "enable_opacity": 1,
             "return_format": "string",
             "allow_in_bindings": 0
         },
         {
             "key": "field_68bc5a6f6bd81",
-            "label": "Four color",
+            "label": "[:es]Four color[:]",
             "name": "four_color",
             "aria-label": "",
             "type": "color_picker",
@@ -74,9 +74,35 @@
                 "id": ""
             },
             "default_value": "",
-            "enable_opacity": 0,
+            "enable_opacity": 1,
             "return_format": "string",
             "allow_in_bindings": 0
+        },
+        {
+            "key": "field_68e131441772e",
+            "label": "[:es]Background[:]",
+            "name": "background",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "allow_in_bindings": 0,
+            "preview_size": "medium"
         }
     ],
     "location": [
@@ -97,5 +123,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757177016
+    "modified": 1759624071
 }

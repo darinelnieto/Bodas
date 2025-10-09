@@ -1,13 +1,14 @@
 #our-history-template-75da3c {
     .our-history{
         position: relative;
-        padding: scaleVW(136, $desktop) scaleVW(237, $desktop) scaleVW(193, $desktop) scaleVW(237, $desktop);
+        padding: scaleVW(90, $desktop) scaleVW(237, $desktop);
         overflow: hidden;
         width: 100%;
         @media(max-width:768px){
             padding: scaleVW(43, $movil) 0;
         }
         img{
+            display: none;
             width: scaleVW(1874.1395, $desktop);
             height: scaleVW(3682.6534, $desktop);
             position: absolute;
@@ -24,7 +25,6 @@
             width: scaleVW(1446, $desktop);
             height: scaleVW(2329, $desktop);
             padding: scaleVW(96, $desktop) scaleVW(110, $desktop);
-            background: $third;
             position: relative;
             z-index: 1;
             @media(max-width:768px){
@@ -35,20 +35,16 @@
                 margin: 0 auto;
             }
             h1{
-                width: scaleVW(452.644, $desktop);
-                height: scaleVW(151.9727, $desktop);
                 font-size: scaleVW(72, $desktop);
                 line-height: LH(66.4, 72);
-                letter-spacing: scaleVW(14, $desktop);
                 margin: 0 auto;
-                margin-bottom: scaleVW(150, $desktop);
-                font-family: $bodoni;
+                margin-bottom: scaleVW(90, $desktop);
+                font-family: $title;
                 color: $primary;
                 text-transform: uppercase;
                 text-align: center;
                 @media(max-width:768px){
                     width: 100%;
-                    height: scaleVW(62.6553, $movil);
                     font-size: scaleVW(30, $movil);
                     line-height: LH(27, 30);
                     letter-spacing: scaleVW(14, $movil);
@@ -56,11 +52,12 @@
                 }
             }
             h2{
+                display: none;
                 width: scaleVW(962.2569, $desktop);
                 height: scaleVW(304.9406, $desktop);
                 font-size: scaleVW(94.78, $desktop);
                 line-height: LH(101.74, 94.78);
-                font-family: $bodoni;
+                font-family: $title;
                 color: $primary;
                 font-style: italic;
                 margin: 0 auto;
@@ -75,7 +72,7 @@
             }
             .description{
                 color: $primary;
-                font-family: $bodoni;
+                font-family: $title;
                 font-size: scaleVW(39.46, $desktop);
                 line-height: LH(47.36, 39.46);
                 margin-bottom: 0;

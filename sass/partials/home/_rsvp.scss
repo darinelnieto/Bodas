@@ -1,12 +1,95 @@
 .rsvp-partial-39366a {
     position: relative;
     overflow: hidden;
-    .banner{
-        width: 100%;
-        height: scaleVW(697.5216, $desktop);
-        object-fit: cover;
-        object-position: center;
+    // After RSVP
+    .after-rsvp{
+        padding: scaleVW(158, $desktop) 0;
+        .content{
+            width: scaleVW(1468.4851, $desktop);
+            margin: 0 auto;
+            .top{
+                text-align: center;
+                p{
+                    font-size: scaleVW(21.59, $desktop);
+                    line-height: LH(25.91, 21.59);
+                    font-family: $title;
+                    color: $primary;
+                    margin-bottom: scaleVW(32, $desktop);
+                    font-weight: 300;
+                    @media(max-width:768px){
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(24, 16);
+                        margin-bottom: scaleVW(20, $desktop);
+                    }
+                }
+                h2{
+                    color: $primary;
+                    font-family: $title;
+                    font-weight: 400;
+                    font-size: scaleVW(65.78, $desktop);
+                    line-height: LH(78.93, 65.78);
+                    margin-bottom: scaleVW(146, $desktop);
+                    @media(max-width:768px){
+                        font-size: scaleVW(22, $movil);
+                        line-height: LH(24, 22);
+                    }
+                }
+            }
+            .items{
+                display: flex;
+                flex-wrap: wrap;
+                gap: scaleVW(40, $desktop) scaleVW(355, $desktop);
+                @media(max-width:768px){
+                    justify-content: center;
+                    align-items: center;
+                    gap: scaleVW(40, $movil);
+                }
+                .item{
+                    text-align: center;
+                    @media(max-width:768px){
+                        width: 33vw;
+                    }
+                    h3{
+                        color: $primary;
+                        font-family: $title;
+                        font-weight: 700;
+                        font-size: scaleVW(170.1, $desktop);
+                        line-height: LH(204.12, 170.1);
+                        margin-bottom: 0;
+                        @media(max-width:768px){
+                            font-size: scaleVW(44, $movil);
+                            line-height: LH(48, 44);
+                        }
+                    }
+                    h4{
+                        color: $primary;
+                        font-family: $title;
+                        font-weight: 500;
+                        font-size: scaleVW(55.28, $desktop);
+                        line-height: LH(66.33, 55.28);
+                        margin-bottom: scaleVW(21, $desktop);
+                        @media(max-width:768px){
+                            font-size: scaleVW(18, $movil);
+                            line-height: LH(24, 18);
+                        }
+                    }
+                    p{
+                        color: $primary;
+                        font-family: $title;
+                        font-weight: 400;
+                        font-size: scaleVW(25.3, $desktop);
+                        line-height: LH(30.36, 25.3);
+                        margin-bottom: 0;
+                        @media(max-width:768px){
+                            font-size: scaleVW(15, $movil);
+                            line-height: LH(24, 15);
+                        }
+                    }
+                }
+            }
+        }
     }
+    // Rsvp
     .form-content{
         width: scaleVW(728, $desktop);
         margin: 0 auto;
@@ -20,7 +103,7 @@
             text-align: center;
             font-size: scaleVW(72, $desktop);
             line-height: LH(66.4, 72);
-            font-family: $bodoni;
+            font-family: $title;
             letter-spacing: scaleVW(14, $desktop);
             margin-bottom: scaleVW(100, $desktop);
             @media(max-width:768px){
@@ -32,7 +115,7 @@
         }
         .description{
             text-align: center;
-            font-family: $bodoni;
+            font-family: $title;
             color: $black;
             font-size: scaleVW(39.46, $desktop);
             line-height: LH(47.36, 39.46);
@@ -49,7 +132,7 @@
                     text-align: center;
                     margin-bottom: scaleVW(69, $desktop);
                     label{
-                        font-family: $bodoni;
+                        font-family: $title;
                         color: $black;
                         font-size: scaleVW(30, $desktop);
                         line-height: LH(36, 30);
@@ -60,7 +143,7 @@
                         }
                     }
                     input, textarea{
-                        font-family: $bodoni;
+                        font-family: $title;
                         color: $black;
                         font-size: scaleVW(27, $desktop);
                         line-height: LH(36, 27);
@@ -89,7 +172,7 @@
                     text-align: center;
                     margin-bottom: scaleVW(69, $desktop);
                     label{
-                        font-family: $bodoni;
+                        font-family: $title;
                         color: $black;
                         font-size: scaleVW(30, $desktop);
                         line-height: LH(36, 30);
@@ -185,11 +268,11 @@
                         display: flex;
                         align-items: center;
                         justify-content: center;
-                        color: $third;
+                        color: $text_vg;
                         background: $secondary;
                         border: none;
                         outline: none;
-                        font-family: $bodoni;
+                        font-family: $title;
                         font-size: scaleVW(30, $desktop);
                         line-height: LH(36, 30);
                         @media(max-width:768px){

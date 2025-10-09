@@ -1,6 +1,6 @@
 {
     "key": "group_68c6f58c11438",
-    "title": "Erika gordon",
+    "title": "[:es]Erika gordon[:]",
     "fields": [
         {
             "key": "field_68c6f58c43e48",
@@ -94,11 +94,11 @@
                     "preview_size": "medium"
                 },
                 {
-                    "key": "field_68c6f5d74336c",
-                    "label": "Description",
-                    "name": "description",
+                    "key": "field_68e181884a389",
+                    "label": "[:es]Title[:]",
+                    "name": "title",
                     "aria-label": "",
-                    "type": "textarea",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -107,12 +107,54 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "<span><\/span>",
+                    "default_value": "[:es]<span><\/span>[:]",
                     "maxlength": "",
                     "allow_in_bindings": 0,
-                    "rows": "",
                     "placeholder": "",
-                    "new_lines": "br"
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_68e185c0b2d05",
+                    "label": "[:es]date[:]",
+                    "name": "date",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "[:es]<span>|<\/span>[:]",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_68c6f5d74336c",
+                    "label": "[:es]Description[:]",
+                    "name": "description",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "allow_in_bindings": 0,
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
                 },
                 {
                     "key": "field_68ca139fbce46",
@@ -225,9 +267,9 @@
             "selected": 0
         },
         {
-            "key": "field_68c6f7cf186a1",
-            "label": "RSVP content",
-            "name": "rsvp_content",
+            "key": "field_68e1ab7cf7b6b",
+            "label": "[:es]Before rsvp[:]",
+            "name": "before_rsvp",
             "aria-label": "",
             "type": "group",
             "instructions": "",
@@ -241,8 +283,8 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_68c6f7cf186a2",
-                    "label": "Background",
+                    "key": "field_68e1b01fb0320",
+                    "label": "[:es]Background[:]",
                     "name": "background",
                     "aria-label": "",
                     "type": "select",
@@ -272,11 +314,11 @@
                     "save_options": 0
                 },
                 {
-                    "key": "field_68c72eb2b7de6",
-                    "label": "Banner image",
-                    "name": "banner_image",
+                    "key": "field_68e1abb3f7b6c",
+                    "label": "[:es]Text before title[:]",
+                    "name": "text_before_title",
                     "aria-label": "",
-                    "type": "image",
+                    "type": "text",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -285,17 +327,151 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "array",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
+                    "default_value": "",
+                    "maxlength": "",
                     "allow_in_bindings": 0,
-                    "preview_size": "medium"
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_68e1abd0f7b6d",
+                    "label": "[:es]Title[:]",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "rows": 2,
+                    "placeholder": "",
+                    "new_lines": "br"
+                },
+                {
+                    "key": "field_68e1abe6f7b6e",
+                    "label": "[:es]Items[:]",
+                    "name": "items",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "table",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "sub_fields": [
+                        {
+                            "key": "field_68e1acf4f7d86",
+                            "label": "[:es]date[:]",
+                            "name": "date",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "[:es]<span>.<\/span>[:]",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_68e1abe6f7b6e"
+                        },
+                        {
+                            "key": "field_68e1ad4cf7d87",
+                            "label": "[:es]Event name[:]",
+                            "name": "event_name",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "allow_in_bindings": 0,
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "parent_repeater": "field_68e1abe6f7b6e"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "key": "field_68c6f7cf186a1",
+            "label": "RSVP content",
+            "name": "rsvp_content",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_68c6f7cf186a2",
+                    "label": "[:es]Background[:]",
+                    "name": "background",
+                    "aria-label": "",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "--main-color": "--main-color",
+                        "--secondary-color": "--secondary-color",
+                        "--third-color": "--third-color",
+                        "--four-color": "--four-color",
+                        "--five-color": "--five-color"
+                    },
+                    "default_value": false,
+                    "return_format": "value",
+                    "multiple": 0,
+                    "allow_null": 0,
+                    "allow_in_bindings": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "placeholder": "",
+                    "create_options": 0,
+                    "save_options": 0
                 },
                 {
                     "key": "field_68c6f7cf186a3",
@@ -407,5 +583,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1758073826
+    "modified": 1759623969
 }

@@ -12,17 +12,15 @@
         }
         h2{
             text-align: center;
-            font-family: $big_caslon;
+            font-family: $title;
             color: $primary;
             font-size: scaleVW(60, $desktop);
             line-height: LH(72, 60);
             margin-bottom: scaleVW(50, $desktop);
-            letter-spacing: scaleVW(10, $desktop);
             @media(max-width:768px){
                 font-size: scaleVW(26, $movil);
                 line-height: LH(31.2, 26);
                 margin-bottom: scaleVW(20, $movil);
-                letter-spacing: scaleVW(7, $movil);
             }
         }
         .places{
@@ -32,7 +30,7 @@
             }
             h3{
                 color: $primary;
-                font-family: $bodoni;
+                font-family: $title;
                 font-style: italic;
                 text-align: center;
                 font-size: scaleVW(34.12, $desktop);
@@ -72,14 +70,14 @@
                         padding: 0 scaleVW(29, $desktop);
                         h4{
                             color: $primary;
-                            font-family: $bodoni;
+                            font-family: $title;
                             font-size: scaleVW(24, $desktop);
                             line-height: LH(28.8, 24);
                             margin-bottom: scaleVW(35, $desktop);
                         }
                         p{
                             color: $primary;
-                            font-family: $bodoni;
+                            font-family: $title;
                             font-size: scaleVW(21, $desktop);
                             line-height: LH(25.2, 21);
                             margin-bottom: 0;

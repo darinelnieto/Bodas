@@ -6,23 +6,22 @@
     }
     .content{
         padding: scaleVW(98, $desktop) 0;
-        max-width: scaleVW(1209.517, $desktop);
-        margin: 0 auto scaleVW(195, $desktop) auto;
+        margin: 0 auto;
         padding-bottom: 0;
         position: relative;
         @media(max-width:768px){
-            padding: scaleVW(57, $movil) 0;
+            padding: scaleVW(57, $movil) 0 0 0;
             max-width: scaleVW(321.0599, $movil);
             margin-bottom: 0;
         }
         h1{
             color: $primary; 
-            font-family: $annabelle;
-            font-size: scaleVW(74.27, $desktop);
-            line-height: LH(70, 74.27);
+            font-family: $title;
+            font-size: scaleVW(92.72, $desktop);
+            line-height: LH(111.27, 92.72);
             text-align: center;
-            max-width: scaleVW(517.959, $desktop);
-            margin: 0 auto scaleVW(120, $desktop) auto;
+            max-width: scaleVW(858.0107, $desktop);
+            margin: 0 auto scaleVW(59, $desktop) auto;
             @media(max-width:768px){
                 font-size: scaleVW(26, $movil);
                 line-height: LH(25, 26);
@@ -30,131 +29,58 @@
                 margin-bottom: scaleVW(33, $movil);
             }
         }
+        .after-title{
+            text-align: center;
+            font-family: $title;
+            font-size: scaleVW(34.12, $desktop);
+            line-height: LH(40.95, 34.12);
+            color: $primary;
+            margin-bottom: scaleVW(95, $desktop);
+            @media(max-width:768px){
+                font-size: scaleVW(18, $movil);
+                line-height: LH(24, 18);
+            }
+        }
         .main-image{
-            width: scaleVW(850.6527, $desktop);
-            height: scaleVW(850.6527, $desktop);
+            width: scaleVW(1600, $desktop);
+            height: scaleVW(900, $desktop);
             object-fit: cover;
             object-position: center;
             margin: 0 auto;
             display: flex;
             @media(max-width:768px){
                 width: scaleVW(284, $movil);
-                height: scaleVW(284, $movil);
+                height: scaleVW(204, $movil);
             }
         }
-        .description{
-            margin-top: scaleVW(224.9058, $desktop);
-            font-size: scaleVW(39.46, $desktop);
-            line-height: LH(47.36, 39.46);
-            color: $primary;
-            font-family: $bodoni;
-            margin-bottom: 0;
-            @media(max-width:768px){
-                margin-top: scaleVW(36, $movil);
-                font-size: scaleVW(16, $movil);
-                line-height: LH(19.2, 16);
-            }
-        }
-    }
-    .repeat-content{
-        width: scaleVW(1688, $desktop);
-        height: scaleVW(402, $desktop);
-        display: flex;
-        align-items: center;
-        position: relative;
-        @media(max-width:768px){
-            width: scaleVW(343.0826, $movil);
-            height: auto;
-        }
-        span{
-            width: 100%;
-            height: 100%;
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-        .content{
+        .seconadry-content{
+            max-width: scaleVW(1340.3509, $desktop);
+            margin: scaleVW(119, $desktop) auto scaleVW(139, $desktop) auto;
             display: flex;
             align-items: center;
-            padding: 0;
-            margin-bottom: 0;
-            position: relative;
-            z-index: 1;
-            width: scaleVW(1468.2877, $desktop);
-            margin: 0 auto;
-            justify-content: space-between;
-            h2{
+            // gap: scaleVW(52, $desktop);
+            @media(max-width:768px){
+                max-width: scaleVW(333, $movil);
+                margin: scaleVW(40, $movil) 0;
+            }
+            .medellin{
+                display: none;
+                width: scaleVW(669.685, $desktop);
+                height: scaleVW(378, $desktop);
+                @media(max-width:768px){
+                    display: none;
+                }
+            }
+            .description{
+                text-align: center;
+                margin: 0;
+                font-size: scaleVW(21, $desktop);
+                line-height: LH(25.2, 21);
                 color: $primary;
-                font-size: scaleVW(60, $desktop);
-                line-height: LH(72, 60);
-                margin: 0;
-                font-family: $big_caslon;
-            }
-            p{
-                margin: 0;
-                height: auto;
-                font-size: scaleVW(36, $desktop);
-                line-height: LH(43.2, 36);
-                width: scaleVW(755.2163, $desktop);
-            }
-            @media(max-width:768px){
-                flex-direction: column;
-                width: scaleVW(293.3649, $movil);
-                padding: scaleVW(20, $movil) 0;
-                h2{
-                    font-size: scaleVW(22, $movil);
-                    line-height: LH(26.4, 22);
-                    margin-bottom: scaleVW(15, $movil);
-                }
-                p{
-                    font-size: scaleVW(16, $movil);
-                    line-height: LH(19.2, 16);
-                    width: 100%;
-                }
-            }
-        }
-    }
-    .repeat-content.left{
-        margin-bottom: scaleVW(123, $desktop);
-        @media(max-width:768px){
-            margin-bottom: scaleVW(75, $movil);
-        }
-        .content{
-            flex-direction: row-reverse;
-            p{
-                text-align: right;
-            }
-            @media(max-width:768px){
-                flex-direction: column;
-                h2{
-                    text-align: right;
-                    width: 100%;
-                }
-            }
-        }
-    }
-    .repeat-content.right{
-        margin-left: auto;
-        .content{
-            max-width: scaleVW(1468.2877, $desktop);
-            h2{
-                width: scaleVW(330.9561, $desktop);
-            }
-            p{
-                width: scaleVW(977.5752, $desktop);
-            }
-            @media(max-width:768px){
-                flex-direction: column;
-                width: scaleVW(293.3649, $movil);
-                padding: scaleVW(20, $movil) 0;
-                h2{
-                    font-size: scaleVW(22, $movil);
-                    line-height: LH(26.4, 22);
-                    margin-bottom: scaleVW(15, $movil);
-                    width: 100%;
-                }
-                p{
+                font-family: $title;
+                margin-bottom: 0;
+                @media(max-width:768px){
+                    margin-top: 0;
                     font-size: scaleVW(16, $movil);
                     line-height: LH(19.2, 16);
                     width: 100%;

@@ -1,5 +1,5 @@
 .banner-erika-gordon-partial-bae786 {
-    padding: scaleVW(149, $desktop) 0 scaleVW(85, $desktop) 0;
+    padding: scaleVW(45, $desktop) 0 scaleVW(85, $desktop) 0;
     @media(max-width:768px){
         padding-top: scaleVW(50, $movil);
         padding-bottom: scaleVW(50, $movil);
@@ -13,58 +13,91 @@
         .image-contain{
             position: relative;
             text-align: center;
+            width: scaleVW(831, $desktop);
+            margin: 0 auto;
             img{
-                width: scaleVW(818, $desktop);
-                height: scaleVW(1090.6667, $desktop);
+                width: scaleVW(831, $desktop);
+                height: scaleVW(1046, $desktop);
                 object-fit: cover;
                 object-position: center;
+                mix-blend-mode: multiply;
                 @media(max-width:768px){
                     width: scaleVW(280.1832, $movil);
                     height: scaleVW(373.5777, $movil);
                 }
             }
-            h1{
-                -webkit-text-fill-color: transparent;
-                color: transparent;
-                font-family: $annabelle;
-                -webkit-background-clip: text;
-                background-clip: text;
-                background-size: cover;
-                background-position: center;
-                font-size: scaleVW(145, $desktop);
-                line-height: LH(174, 145);
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 100%;
-                margin-bottom: 0;
-                @media(max-width:768px){
-                    font-size: scaleVW(50, $movil);
-                    line-height: LH(60, 50);
-                }
+            @media(max-width:768px){
+                width: max-content;
             }
         }
-        h2{
-            margin-top: scaleVW(52, $desktop);
-            color: $third;
-            font-size: scaleVW(44.66, $desktop);
-            line-height: LH(53.59, 44.66);
+        h1{
+            margin-top: scaleVW(0, $desktop);
+            color: $primary;
+            font-size: scaleVW(38.34, $desktop);
+            line-height: LH(46, 38.34);
             text-align: center;
-            font-family: $bodoni;
-            font-weight: 400;
+            font-family: $title;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-style: italic;
+            display: flex;
+            gap: scaleVW(30, $desktop);
+            justify-content: center;
+            align-items: center;
+            letter-spacing: scaleVW(4, $desktop);
+            margin-bottom: scaleVW(42, $desktop);
             span{
-                font-family: $pinyong;
-                font-size: scaleVW(37.26, $desktop);
-                line-height: LH(44.72, 37.26);
+                font-size: scaleVW(27.31, $desktop);
+                line-height: LH(32.77, 27.31);
+                font-weight: 200;
+                font-style: normal;
             }
             @media(max-width:768px){
+                flex-direction: column;
                 margin-top: scaleVW(32, $movil);
+                margin-bottom: scaleVW(28, $movil);
                 font-size: scaleVW(25.49, $movil);
                 line-height: LH(30.59, 25.49);
                 span{
                     font-size: scaleVW(21.27, $movil);
                     line-height: LH(25.53, 21.27);
+                }
+            }
+        }
+        h3{
+            font-family: $title;
+            display: flex;
+            color: $primary;
+            gap: scaleVW(30, $desktop);
+            justify-content: center;
+            align-items: center;
+            font-size: scaleVW(33.49, $desktop);
+            line-height: LH(40.19, 33.49);
+            text-transform: uppercase;
+            font-weight: 300;
+            letter-spacing: scaleVW(2, $desktop);
+            margin-bottom: scaleVW(36, $desktop);
+            @media(max-width:768px){
+                gap: scaleVW(20, $movil);
+                font-size: scaleVW(22, $movil);
+                line-height: LH(26, 22);
+                letter-spacing: scaleVW(2, $movil);
+                margin-bottom: scaleVW(30, $movil);
+            }
+        }
+        .description{
+            font-family: $title;
+            color: $primary;
+            text-align: center;
+            h2{
+                font-size: scaleVW(41.08, $desktop);
+                line-height: LH(49.29, 41.08);
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: scaleVW(2, $desktop);
+                @media(max-width:768px){
+                    font-size: scaleVW(18, $movil);
+                    line-height: LH(24, 18);
                 }
             }
         }

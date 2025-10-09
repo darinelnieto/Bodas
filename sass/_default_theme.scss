@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Pinyon+Script&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @font-face {
     font-family: 'Big Caslon';
     src: url('../fonts/BigCaslon-Medium.woff2') format('woff2'),
@@ -16,11 +17,12 @@
     font-display: swap;
 }
 /*========== Font family ==========*/
-$bodoni: "Bodoni Moda", serif;
-$pinyong: "Pinyon Script", cursive;
+$title: "Bodoni Moda", serif;
+$title: "Pinyon Script", cursive;
 $raleway: "Raleway", sans-serif;
-$big_caslon: 'Big Caslon';
-$annabelle: 'Annabelle JF';
+$title: 'Big Caslon';
+$title: 'Annabelle JF';
+$title: "Playfair Display", serif;
 /*======== Globals color ========*/
 $primary: var(--main-color);
 $secondary: var(--secondary-color);
@@ -28,6 +30,7 @@ $third: var(--third-color);
 $four: var(--four-color);
 $black:#000000;
 $white:#ffffff;
+$text_vg: #f7f2e6;
 /*======== Function width ========*/
 $movil: 390;
 $desktop: 1920;
