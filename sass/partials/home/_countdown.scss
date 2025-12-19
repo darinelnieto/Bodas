@@ -1,5 +1,6 @@
 .countdown-partial-3dfca8 {
     padding: scaleVW(109, $desktop) 0;
+    background: $green_lt;
     @media(max-width:768px){
         padding: scaleVW(90, $movil) 0;
     }
@@ -7,7 +8,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: $third;
+        color: $green;
         text-align: center;
         gap: scaleVW(184, $desktop);
         width: scaleVW(1540.1553, $desktop);
@@ -18,7 +19,7 @@
         }
         .item-count{
             span{
-                font-family: $bodoni;
+                font-family: $title;
                 font-size: scaleVW(30, $desktop);
                 line-height: LH(36, 30);
                 @media(max-width:768px){
@@ -36,6 +37,71 @@
                     margin-bottom: scaleVW(5, $movil);
                 }
             }
+        }
+    }
+}
+/*=========== Content count down after ===========*/
+.content-after-count-down{
+    background: $purple;
+    padding: scaleVW(92, $desktop) 0;
+    position: relative;
+    @media(max-width:768px){
+        padding: scaleVW(33, $movil);
+    }
+    .center-image{
+        width: scaleVW(713.5816, $desktop);
+        height: scaleVW(1069.9266, $desktop);
+        margin: 0 auto;
+        position: relative;
+        .photo{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .logo{
+            position: absolute;
+            width: scaleVW(197.9766, $desktop);
+            height: scaleVW(99.3857, $desktop);
+            bottom: scaleVW(37, $desktop);
+            right: scaleVW(-94, $desktop);
+        }
+        @media(max-width:768px){
+            width: scaleVW(259.0435, $movil);
+            height: scaleVW(388.4034, $movil);
+            .logo{
+                width: scaleVW(71.8692, $movil);
+                height: scaleVW(36.0789, $movil);
+                bottom: scaleVW(13.5, $movil);
+                right: scaleVW(-34, $movil);
+            }
+        }
+    }
+    .img-left{
+        width: scaleVW(353.6184, $desktop);
+        height: scaleVW(439.5127, $desktop);
+        position: absolute;
+        left: scaleVW(176, $desktop);
+        bottom: scaleVW(291, $desktop);
+        animation: flower 3.5s ease-in-out infinite;
+        @media(max-width:768px){
+            width: scaleVW(60.5686, $movil);
+            height: scaleVW(75.2808, $movil);
+            left: 0;
+            bottom: scaleVW(155, $movil);
+        }
+    }
+    .right-img{
+        position: absolute;
+        width: scaleVW(326.5025, $desktop);
+        height: scaleVW(340.0751, $desktop);
+        right: scaleVW(236, $desktop);
+        top: scaleVW(134, $desktop);
+        animation: song 3.5s ease-in-out infinite;
+        @media(max-width:768px){
+            width: scaleVW(73.4096, $movil);
+            height: scaleVW(76.4612, $movil);
+            right: scaleVW(-9.6, $movil);
+            top: scaleVW(15, $movil);
         }
     }
 }

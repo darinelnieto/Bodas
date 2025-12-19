@@ -1,25 +1,24 @@
 .banner-medellin-partial-2a557e {
-    background: $third;
+    background: $orange_lt;
     padding-bottom: scaleVW(123, $desktop);
     @media(max-width:768px){
         padding-bottom: scaleVW(75, $movil);
     }
-    .content{
+    .content{ 
         padding: scaleVW(98, $desktop) 0;
         max-width: scaleVW(1209.517, $desktop);
         margin: 0 auto scaleVW(195, $desktop) auto;
         padding-bottom: 0;
         @media(max-width:768px){
             padding: scaleVW(57, $movil) 0;
-            max-width: scaleVW(321.0599, $movil);
+            max-width: scaleVW(360, $movil);
             margin-bottom: 0;
         }
         h1{
-            color: $primary;
-            font-family: $bodoni;
-            font-size: scaleVW(72, $desktop);
-            line-height: LH(66.4, 72);
-            letter-spacing: scaleVW(14, $desktop);
+            color: $orange;
+            font-family: $title;
+            font-size: scaleVW(92.72, $desktop);
+            line-height: LH(83.27, 92.72);
             text-align: center;
             max-width: scaleVW(929.0898, $desktop);
             margin: 0 auto scaleVW(120, $desktop) auto;
@@ -32,23 +31,23 @@
             }
         }
         .main-image{
-            width: scaleVW(850.6527, $desktop);
+            width: scaleVW(576.24, $desktop);
             height: scaleVW(850.6527, $desktop);
             object-fit: cover;
             object-position: center;
             margin: 0 auto;
             display: flex;
             @media(max-width:768px){
-                width: scaleVW(284, $movil);
-                height: scaleVW(284, $movil);
+                width: scaleVW(300, $movil);
+                height: scaleVW(449.8126, $movil);
             }
         }
         .description{
             margin-top: scaleVW(224.9058, $desktop);
             font-size: scaleVW(39.46, $desktop);
             line-height: LH(47.36, 39.46);
-            color: $primary;
-            font-family: $bodoni;
+            color: $orange;
+            font-family: $text;
             margin-bottom: 0;
             @media(max-width:768px){
                 margin-top: scaleVW(36, $movil);
@@ -68,6 +67,7 @@
             height: auto;
         }
         span{
+            background: $orange;
             width: 100%;
             height: 100%;
             display: block;
@@ -86,13 +86,15 @@
             margin: 0 auto;
             justify-content: space-between;
             h2{
-                color: $primary;
+                color: $orange_lt;
                 font-size: scaleVW(60, $desktop);
                 line-height: LH(72, 60);
                 margin: 0;
-                font-family: $big_caslon;
+                font-family: $title;
             }
             p{
+                font-family: $text;
+                color: $orange_lt;
                 margin: 0;
                 height: auto;
                 font-size: scaleVW(36, $desktop);

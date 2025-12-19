@@ -3,6 +3,37 @@
     "title": "FAQs",
     "fields": [
         {
+            "key": "field_6939640a66680",
+            "label": "Header background",
+            "name": "header_background",
+            "aria-label": "",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "apricot": "apricot",
+                "lavender-pink": "lavender-pink",
+                "thistle": "thistle",
+                "straw": "straw"
+            },
+            "default_value": false,
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
+        },
+        {
             "key": "field_68c1676742f6d",
             "label": "Main background",
             "name": "main_background",
@@ -17,10 +48,10 @@
                 "id": ""
             },
             "choices": {
-                "--main-color": "--main-color",
-                "--secondary-color": "--secondary-color",
-                "--third-color": "--third-color",
-                "--four-color": "--four-color"
+                "apricot": "apricot",
+                "lavender-pink": "lavender-pink",
+                "thistle": "thistle",
+                "straw": "straw"
             },
             "default_value": false,
             "return_format": "value",
@@ -70,11 +101,10 @@
                         "id": ""
                     },
                     "choices": {
-                        "--main-color": "--main-color",
-                        "--secondary-color": "--secondary-color",
-                        "--third-color": "--third-color",
-                        "--four-color": "--four-color",
-                        "--five-color": "--five-color"
+                        "apricot": "apricot",
+                        "lavender-pink": "lavender-pink",
+                        "thistle": "thistle",
+                        "straw": "straw"
                     },
                     "default_value": false,
                     "return_format": "value",
@@ -227,5 +257,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757551409
+    "display_title": "",
+    "modified": 1765632624
 }

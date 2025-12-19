@@ -1,0 +1,252 @@
+.reception-partial-5c2da2 {
+    background: $orange_lt;
+    padding-top: scaleVW(122, $desktop);
+    padding-bottom: scaleVW(97, $desktop);
+    position: relative;
+    @media(max-width:768px){
+        padding-top: scaleVW(61.2788, $movil);
+        padding-bottom: scaleVW(55.195, $movil);
+    }
+    .top-right-image{
+        position: absolute;
+        width: scaleVW(128.4121, $desktop);
+        height: scaleVW(109.8666, $desktop);
+        object-fit: contain;
+        right: scaleVW(267, $desktop);
+        top: scaleVW(130, $desktop);
+        animation: bee 3.5s ease-in-out infinite;
+        @media(max-width: 768px){
+            width: scaleVW(64.4995, $movil);
+            height: scaleVW(55.1844, $movil);
+            right: scaleVW(15.4012, $movil);
+            top: scaleVW(35.4012, $movil);
+        }
+    }
+    .top-left-image{
+        position: absolute;
+        width: scaleVW(358.978, $desktop);
+        height: scaleVW(343.198, $desktop);
+        object-fit: contain;
+        left: scaleVW(325, $desktop);
+        top: scaleVW(72, $desktop);
+        animation: song 3.5s ease-in-out infinite;
+        @media(max-width: 768px){
+            top: 0;
+            left: 0;
+            width: scaleVW(101.46, $movil);
+            height: scaleVW(97, $movil);
+        }
+    }
+    .bottom-left-image{
+        position: absolute;
+        width: scaleVW(290.3199, $desktop);
+        height: scaleVW(312.5377, $desktop);
+        object-fit: contain;
+        left: scaleVW(318, $desktop);
+        bottom: scaleVW(113, $desktop);
+        animation: flower 3.5s ease-in-out infinite;
+        @media(max-width: 768px){
+            bottom: 0;
+            left: 0;
+            width: scaleVW(104.6989, $movil);
+            height: scaleVW(112.7114, $movil);
+        }
+    }
+    .content{
+        width: scaleVW(1604.1162, $desktop);
+        margin-left: auto;
+        margin-right: scaleVW(89, $desktop);
+        display: flex;
+        align-items: end;
+        margin-bottom: scaleVW(56, $desktop);
+        @media(max-width:768px){
+            flex-direction: column;
+            align-items: center;
+            width: scaleVW(360, $movil);
+            gap: scaleVW(27, $movil);
+            margin-bottom: scaleVW(27, $movil);
+        }
+        .left{
+            width: scaleVW(210.9878, $desktop);
+            padding-bottom: scaleVW(199, $desktop);
+            margin-right: scaleVW(205, $desktop);
+            p{
+                font-family: $title;
+                color: $orange;
+                font-size: scaleVW(55.28, $desktop);
+                line-height: LH(66.33, 55.28);
+                margin: 0;
+            }
+            @media(max-width:768px){
+                display: none;
+                padding: 0;
+                width: 100%;
+                text-align: center;
+                margin: 0;
+                p{
+                    font-size: scaleVW(20, $movil);
+                    line-height: LH(24, 20);
+                }
+            }
+        }
+        .center{
+            width: scaleVW(692.4, $desktop);
+            height: scaleVW(744.96, $desktop);
+            margin-right: scaleVW(128, $desktop);
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            @media(max-width:768px){
+                width: scaleVW(360, $movil);
+                height: scaleVW(326.9377, $movil);
+                margin: 0 auto;
+                margin-bottom: scaleVW(26, $movil);
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .right{
+            width: scaleVW(367.1191, $desktop);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: scaleVW(59, $desktop);
+            padding-bottom: scaleVW(103, $desktop);
+            p{
+                font-family: $title;
+                color: $orange;
+                font-size: scaleVW(46.9, $desktop);
+                line-height: LH(47.8, 46.9);
+                margin: 0;
+                span{
+                    font-size: scaleVW(28.23, $desktop);
+                    line-height: LH(28.77, 28.23);
+                }
+                a{
+                    font-family: $text;
+                    font-size: scaleVW(21, $desktop);
+                    line-height: LH(25, 21);
+                    display: block;
+                    flex-wrap: wrap;
+                    width: scaleVW(227.0113, $desktop);
+                    margin: 0 auto;
+                    text-decoration: none;
+                    color: $orange;
+                }
+            }
+            @media(max-width:768px){
+                padding: 0;
+                width: 100%;
+                text-align: center;
+                gap: scaleVW(8, $movil);
+                p{
+                    font-size: scaleVW(20, $movil);
+                    line-height: LH(29.17, 20);
+                    width: scaleVW(300, $movil);
+                    margin-left: auto;
+                    margin-right: auto;
+                    span{
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(14.94, 16);
+                    }
+                    a{
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(19.2, 16);
+                        width: scaleVW(141.2627, $movil);
+                    }
+                }
+            }
+        }
+    }
+    .description{
+        text-align: center;
+        width: scaleVW(800, $desktop);
+        margin: 0 auto;
+        color: $orange;
+        @media(max-width:768px){
+            width: scaleVW(360, $movil);
+        }
+        h2{
+            font-family: $title;
+            font-size: scaleVW(65.78, $desktop);
+            line-height: LH(78.93, 65.78);
+            margin: 0;
+            @media(max-width:768px){
+                font-size: scaleVW(39, $movil);
+                line-height: LH(46.8, 39);
+            }
+        }
+        h3{
+            font-family: $title;
+            font-size: scaleVW(55.28, $desktop);
+            line-height: LH(66.33, 55.28);
+            margin: 0;
+            margin-bottom: scaleVW(67, $desktop);
+            @media(max-width:768px){
+                font-size: scaleVW(28.63, $movil);
+                line-height: LH(34.36, 28.63);
+                margin-bottom: scaleVW(50.2471, $movil);
+            }
+        }
+
+        h4{
+            font-family: $title;
+            font-size: scaleVW(49.17, $desktop);
+            line-height: LH(59, 49.17);
+            margin-top: 0;
+            margin-bottom: scaleVW(20, $desktop);
+            @media(max-width:768px){
+                font-size: scaleVW(25.47, $movil);
+                line-height: LH(30.56, 25.47);
+                margin-bottom: scaleVW(7, $movil);
+            }
+        }
+        p{
+            font-family: $text;
+            color: $orange;
+            margin-bottom: scaleVW(23, $desktop);
+            font-size: scaleVW(24, $desktop);
+            line-height: LH(28.8, 24);
+            a{
+                color: $orange;
+                text-decoration: none;
+            }
+            @media(max-width:768px){
+                font-size: scaleVW(16, $movil);
+                line-height: LH(19.2, 16);
+                margin-bottom: scaleVW(7, $movil);
+            }
+        }
+        p:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .left.movil{
+        width: scaleVW(210.9878, $desktop);
+        padding-bottom: scaleVW(199, $desktop);
+        margin-right: scaleVW(205, $desktop);
+        display: none;
+        p{
+            font-family: $title;
+            color: $orange;
+            font-size: scaleVW(55.28, $desktop);
+            line-height: LH(66.33, 55.28);
+            margin: 0;
+        }
+        @media(max-width:768px){
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            display: block;
+            p{
+                font-size: scaleVW(20, $movil);
+                line-height: LH(24, 20);
+            }
+        }
+    }
+}

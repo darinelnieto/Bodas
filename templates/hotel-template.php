@@ -15,29 +15,17 @@ $end = get_field('wedding_area');
 $top = $end['top_content'];
 $bottom = $end['bottom_content'];
 ?>
-<main id="hotel-template-caaf6c" style="background:var(<?= get_field('background'); ?>);">
+<main id="hotel-template-caaf6c">
     <section class="main-content">
-        <?php if($main_content['main_image']): $img = $main_content['main_image']; ?>
-            <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" width="<?= $img['width']; ?>" height="<?= $img['height']; ?>" class="main-img">
-        <?php endif; ?>
         <div class="text-content">
-            <?php if($main_content['title']): ?>
-                <h1><?= $main_content['title']; ?></h1>
-            <?php endif; if($main_content['desctiprion']): ?>
-                <p class="description"><?= $main_content['desctiprion']; ?></p>
-            <?php endif; ?>
+            <h1><?= the_title(); ?></h1>
         </div>
     </section>
-    <?php if($hotels['hotels_list']): ?>
-        <section class="hotels">
-            <?php if($hotels['title']): ?>
-                <h2 class="title"><?= $hotels['title']; ?></h2>
-            <?php endif; ?>
-            <?php foreach($hotels['hotels_list'] as $hotel): $img = $hotel['main_image']; ?>
+    <section class="hotels">
+        <div class="content">
+            <?php if($hotels['hotels_list']): foreach($hotels['hotels_list'] as $hotel): $img = $hotel['main_image']; ?>
                 <div class="hotel">
-                    <?php if($img): ?>
-                        <img src="<?= $img['url']; ?>" alt="<?= $img['title']; ?>" width="<?= $img['width']; ?>" height="<?= $img['height']; ?>" class="main-image">
-                    <?php endif; ?>
+                    <?= $img ? wp_get_attachment_image($img, 'full', false, array('class' => 'hotel-image')) : ''; ?>
                     <div class="text-content">
                         <?php if($hotel['name']): ?>
                             <h3 class="name"><?= $hotel['name']; ?></h3>
@@ -49,20 +37,20 @@ $bottom = $end['bottom_content'];
                             <div class="description">
                                 <?= $hotel['description']; ?>
                             </div>
-                        <?php endif; if($hotel['primary_button']): $cta = $hotel['primary_button']; ?>
+                        <?php endif; if(!empty($hotel['primary_button'])): $cta = $hotel['primary_button']; ?>
                             <a href="<?= $cta['url']; ?>" target="<?= $cta['target']; ?>" class="primary-button cta">
                                 <?php if(get_bloginfo("language") == "en-US"): ?>Book your stay<?php else: ?>Reserva tu estadía<?php endif; ?>
                             </a>
-                        <?php endif; if($hotel['secondary_button']): $cta = $hotel['secondary_button']; ?>
+                        <?php endif; if(!empty($hotel['secondary_button'])): $cta = $hotel['secondary_button']; ?>
                             <a href="<?= $cta['url']; ?>" target="<?= $cta['target']; ?>" class="secondary-button cta">
                                 <?php if(get_bloginfo("language") == "en-US"): ?>More info<?php else: ?>Más info<?php endif; ?>
                             </a>
                         <?php endif; ?>
                     </div>
                 </div>
-            <?php endforeach; ?>
-        </section>
-    <?php endif; ?>
+            <?php endforeach; endif; ?>
+        </div>
+    </section>
     <!-- Content end -->
     <section class="end-content">
         <?php if($end['title']): ?>

@@ -1,78 +1,135 @@
 .hero-banner-partial-f313d1 {
-    padding: scaleVW(57, $desktop) scaleVW(99, $desktop) scaleVW(27, $desktop) scaleVW(104, $desktop);
-    width: 100%;
-    text-align: center;
+    background: $orange_lt;
+    padding-top: scaleVW(142, $desktop);
+    padding-bottom: scaleVW(105, $desktop);
+    position: relative;
     @media(max-width:768px){
-        padding: scaleVW(57, $movil) scaleVW(20, $movil) scaleVW(27, $movil) scaleVW(20, $movil);
+        padding-bottom: scaleVW(40, $movil);
     }
-    .main-image{
-        width: scaleVW(1717.4333, $desktop);
-        height: scaleVW(596.2582, $desktop);
+    .content{ 
+        width: scaleVW(1534, $desktop);
+        margin: 0 auto;
+        position: relative;
         @media(max-width:768px){
-            width: scaleVW(336.7562, $movil);
-            height: scaleVW(116.9149, $movil);
+            width: scaleVW(360, $movil);
         }
-    }
-    .wedding-date{
-        font-family: $big_caslon;
-        color: $primary;
-        font-size: scaleVW(199.73, $desktop);
-        line-height: LH(239.68, 199.73);
-        display: flex;
-        align-items: center;
-        gap: scaleVW(59, $desktop);
-        justify-content: center;
-        height: scaleVW(250.3691, $desktop);
-        margin-bottom: scaleVW(29, $desktop);
-        span{
-            display: block;
-            width: scaleVW(19.4127, $desktop);
-            height: scaleVW(19.4127, $desktop);
-            background: $four;
-            border-radius: 50%;
-            transform: translateY(1vw);
+        .gallery{
+            display: flex;
+            align-items: flex-end;
+            gap: scaleVW(242, $desktop);
+            .left, .right{
+                width: scaleVW(310, $desktop);
+                height: scaleVW(465, $desktop);
+                padding-bottom: scaleVW(21, $desktop);
+            }
+            .center{
+                width: scaleVW(446, $desktop);
+                height: scaleVW(666, $desktop);
+            }
+            .a-couple{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            @media(max-width:768px){
+                gap: scaleVW(23, $movil);
+                display: none;
+                .left, .right{
+                    width: scaleVW(90.5844, $movil);
+                    height: scaleVW(135.8766, $movil);
+                    padding-bottom: scaleVW(10, $movil);
+                }
+                .center{
+                    width: scaleVW(130.3247, $movil);
+                    height: scaleVW(194.6104, $movil);
+                }
+            }
         }
-        @media(max-width:768px){
-            font-size: scaleVW(99, $movil);
-            line-height: LH(139.68, 99);
-            height: scaleVW(150.3691, $movil);
-            margin-bottom: scaleVW(29, $movil);
-            span{
-                width: scaleVW(12, $movil);
-                height: scaleVW(12, $movil);
+        .gallery.movil{
+            display: none;
+            .center, .left, .right{
+                text-align: center;
+                width: scaleVW(180.5499, $movil);
+                height: scaleVW(269.6104, $movil);
+                margin: 0 auto;
+            }
+            @media(max-width:768px){
+                display: block;
+            }
+        }
+        .text-content{
+            text-align: center;
+            color: $orange;
+            h1{
+                font-family: $title;
+                font-size: scaleVW(101.86, $desktop);
+                line-height: LH(82.23, 101.86);
+                margin-top: scaleVW(63, $desktop);
+                padding-bottom: scaleVW(27, $desktop);
+                @media(max-width:768px){
+                    font-size: scaleVW(32, $movil);
+                    line-height: LH(44, 32);
+                    margin-bottom: scaleVW(8, $movil);
+                }
+            }
+            .date-and-location{
+                h2{
+                    font-family: $title;
+                    font-size: scaleVW(52.49, $desktop);
+                    line-height: LH(62.99, 52.49);
+                    margin-top: 0;
+                    margin-bottom: scaleVW(43, $desktop);
+                }
+                p{
+                    font-family: $title;
+                    font-size: scaleVW(36, $desktop);
+                    line-height: LH(43.2, 36);
+                    margin: 0;
+                }
+                @media(max-width:768px){
+                    h2{
+                        font-size: scaleVW(25, $movil);
+                        line-height: LH(36, 25);
+                        margin-bottom: scaleVW(12, $movil);
+                    }
+                    p{
+                        font-size: scaleVW(20, $movil);
+                        line-height: LH(24, 20);
+                    }
+                }
             }
         }
     }
-    .main-text{
-        font-family: $bodoni;
-        color: $primary;
-        font-size: scaleVw(69.63, $desktop);
-        line-height: LH(71.56, 69.63);
-        margin-bottom: scaleVW(113, $desktop);
+    // Ornament images 
+    .bee-image{
+        position: absolute;
+        width: scaleVW(120.6526, $desktop);
+        height: scaleVW(112.0851, $desktop);
+        left: scaleVW(82, $desktop);
+        bottom: scaleVW(145.5, $desktop);
+        animation: bee 3.5s ease-in-out infinite;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
         @media(max-width:768px){
-            font-size: scaleVw(48, $movil);
-            line-height: LH(50, 48);
-            margin-bottom: scaleVW(113, $movil);
+            width: scaleVW(42.1312, $movil);
+            height: scaleVW(39.1395, $movil);
         }
     }
-    .secondary-text{
-        color: $primary;
-        font-family: $bodoni;
-        font-size: scaleVW(39.46, $desktop);
-        line-height: LH(47.36, 39.46);
-        margin-bottom: scaleVW(55, $desktop);
-        @media(max-width:768px){
-            font-size: scaleVW(22, $movil);
-            line-height: LH(36, 22);
-            margin-bottom: scaleVW(55, $movil);
-        }
-    }
-    .secondary-image{
-        width: scaleVW(175.8514, $desktop);
-        height: scaleVW(82.0897, $desktop);
-        @media(max-width:768px){
-            width: scaleVW(78.8313, $movil);
-            height: scaleVW(36.7995, $movil);
+    .rings-image{
+        position: absolute;
+        width: scaleVW(298.1641, $desktop);
+        height: scaleVW(339.0037, $desktop);
+        right: scaleVW(387, $desktop);
+        top: scaleVW(-60, $desktop);
+        animation: flower 3.5s ease-in-out infinite;
+        z-index: 10;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     }
 }

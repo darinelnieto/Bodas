@@ -18,9 +18,9 @@ if(!empty($shops['stores'])):
         <div class="stores">
             <?php foreach($shops['stores'] as $store): $img = $store['image']; ?>
                 <div class="store">
-                    <div class="text-content" style="background:var(<?= $store['background'] ?? '--main-color'; ?>)">
-                        <h3 style="color:var(<?= $store['text_color'] ?? '--main-color'; ?>)"><?= $store['name'] ?? ''; ?></h3>
-                        <div class="description" style="color:var(<?= $store['text_color'] ?? '--main-color'; ?>)">
+                    <div class="text-content">
+                        <h3><?= $store['name'] ?? ''; ?></h3>
+                        <div class="description">
                             <?= $store['description'] ?? ''; ?>
                         </div>
                     </div>

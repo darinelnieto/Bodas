@@ -3,9 +3,9 @@
     "title": "Wedding details",
     "fields": [
         {
-            "key": "field_68bddf5cbc415",
-            "label": "Background",
-            "name": "background",
+            "key": "field_693a97cc246b1",
+            "label": "Header background",
+            "name": "header_background",
             "aria-label": "",
             "type": "select",
             "instructions": "",
@@ -17,12 +17,12 @@
                 "id": ""
             },
             "choices": {
-                "--main-color": "--main-color",
-                "--secondary-color": "--secondary-color",
-                "--third-color": "--third-color",
-                "--four-color": "--four-color"
+                "apricot": "apricot",
+                "lavender-pink": "lavender-pink",
+                "thistle": "thistle",
+                "straw": "straw"
             },
-            "default_value": false,
+            "default_value": "lavender-pink",
             "return_format": "value",
             "multiple": 0,
             "allow_null": 0,
@@ -34,11 +34,11 @@
             "save_options": 0
         },
         {
-            "key": "field_68bddf9bbc416",
-            "label": "Main image",
-            "name": "main_image",
+            "key": "field_693a97ee246b2",
+            "label": "Footer background",
+            "name": "footer_background",
             "aria-label": "",
-            "type": "image",
+            "type": "select",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -47,24 +47,29 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
+            "choices": {
+                "apricot": "apricot",
+                "lavender-pink": "lavender-pink",
+                "thistle": "thistle",
+                "straw": "straw"
+            },
+            "default_value": "straw",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
             "allow_in_bindings": 0,
-            "preview_size": "medium"
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
         },
         {
-            "key": "field_68bec279d0faa",
-            "label": "Last image",
-            "name": "last_image",
+            "key": "field_693bee117439a",
+            "label": "Party",
+            "name": "",
             "aria-label": "",
-            "type": "image",
+            "type": "tab",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -73,24 +78,16 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "array",
-            "library": "all",
-            "min_width": "",
-            "min_height": "",
-            "min_size": "",
-            "max_width": "",
-            "max_height": "",
-            "max_size": "",
-            "mime_types": "",
-            "allow_in_bindings": 0,
-            "preview_size": "medium"
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
         },
         {
-            "key": "field_68bddfa4bc417",
-            "label": "wedding details",
-            "name": "wedding_details",
+            "key": "field_693a980e246b3",
+            "label": "Welcomme party",
+            "name": "welcomme_party",
             "aria-label": "",
-            "type": "repeater",
+            "type": "group",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -100,17 +97,11 @@
                 "id": ""
             },
             "layout": "block",
-            "pagination": 0,
-            "min": 0,
-            "max": 0,
-            "collapsed": "",
-            "button_label": "Add Row",
-            "rows_per_page": 20,
             "sub_fields": [
                 {
-                    "key": "field_68bdfd83bc418",
-                    "label": "Event date",
-                    "name": "event_date",
+                    "key": "field_693a992e246b5",
+                    "label": "Hour",
+                    "name": "hour",
                     "aria-label": "",
                     "type": "text",
                     "instructions": "",
@@ -121,20 +112,19 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "<span><\/span> <span><\/span>",
+                    "default_value": "1:00 pm",
                     "maxlength": "",
                     "allow_in_bindings": 0,
                     "placeholder": "",
                     "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_68bddfa4bc417"
+                    "append": ""
                 },
                 {
-                    "key": "field_68bdfdc9bc419",
-                    "label": "Event name",
-                    "name": "event_name",
+                    "key": "field_693a99b5246b6",
+                    "label": "Center content",
+                    "name": "center_contennt",
                     "aria-label": "",
-                    "type": "text",
+                    "type": "group",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -143,107 +133,61 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "maxlength": "",
-                    "allow_in_bindings": 0,
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_68bddfa4bc417"
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_693a99cb246b7",
+                            "label": "Event image",
+                            "name": "event_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "allow_in_bindings": 0,
+                            "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_693a9a06246b8",
+                            "label": "Description",
+                            "name": "description",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<h2>Welcome Party<\/h2>\r\n<h3>07.05.26<\/h3>\r\n\r\n<h4>Dresscode<\/h4>\r\n<p>Cowboy Chic<\/p>\r\n<a href=\"#\">Clic aquí para ver referentes.<\/a>",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ]
                 },
                 {
-                    "key": "field_68bdfdeebc41a",
-                    "label": "Event image",
-                    "name": "event_image",
-                    "aria-label": "",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "allow_in_bindings": 0,
-                    "preview_size": "medium",
-                    "parent_repeater": "field_68bddfa4bc417"
-                },
-                {
-                    "key": "field_68bdfe38bc41c",
-                    "label": "Title after event image",
-                    "name": "title_after_event_image",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "allow_in_bindings": 0,
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_68bddfa4bc417"
-                },
-                {
-                    "key": "field_68bdfe1ebc41b",
-                    "label": "Event location",
-                    "name": "event_location",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "allow_in_bindings": 0,
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_68bddfa4bc417"
-                },
-                {
-                    "key": "field_68bdfe56bc41d",
-                    "label": "Cta",
-                    "name": "cta",
-                    "aria-label": "",
-                    "type": "link",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "allow_in_bindings": 0,
-                    "parent_repeater": "field_68bddfa4bc417"
-                },
-                {
-                    "key": "field_68bdfe81bc41e",
-                    "label": "Description",
-                    "name": "description",
+                    "key": "field_693a9a3f246ba",
+                    "label": "Content right",
+                    "name": "content_right",
                     "aria-label": "",
                     "type": "wysiwyg",
                     "instructions": "",
@@ -254,13 +198,547 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
+                    "default_value": "<p>Hacienda Fizebad\r\nEl Retiro, Antioquia<\/p>\r\n<a href=\"#\">Clic aquí para ver Google maps<\/a>",
                     "allow_in_bindings": 0,
                     "tabs": "all",
                     "toolbar": "full",
                     "media_upload": 1,
-                    "delay": 0,
-                    "parent_repeater": "field_68bddfa4bc417"
+                    "delay": 0
+                }
+            ]
+        },
+        {
+            "key": "field_693bee2f7439b",
+            "label": "Ceremony",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_693ab32ffdc01",
+            "label": "Boda",
+            "name": "boda",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_693ab32ffdc02",
+                    "label": "Hour",
+                    "name": "hour",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "1:00 pm",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_693ab32ffdc03",
+                    "label": "Center content",
+                    "name": "center_contennt",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_693ab32ffdc04",
+                            "label": "Event image",
+                            "name": "event_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "allow_in_bindings": 0,
+                            "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_693ab32ffdc05",
+                            "label": "Description",
+                            "name": "description",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<h2>Welcome Party<\/h2>\r\n<h3>07.05.26<\/h3>\r\n\r\n<h4>Dresscode<\/h4>\r\n<p>Cowboy Chic<\/p>\r\n<a href=\"#\">Clic aquí para ver referentes.<\/a>",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ]
+                },
+                {
+                    "key": "field_693ab32ffdc06",
+                    "label": "Content right",
+                    "name": "content_right",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "<p>Hacienda Fizebad\r\nEl Retiro, Antioquia<\/p>\r\n<a href=\"#\">Clic aquí para ver Google maps<\/a>",
+                    "allow_in_bindings": 0,
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_693ab354fdc07",
+                    "label": "Image left",
+                    "name": "image_left",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium"
+                }
+            ]
+        },
+        {
+            "key": "field_693bee5f7439c",
+            "label": "Reception content",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_693bedc7a390a",
+            "label": "Reception",
+            "name": "reception",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_693bf32dce29c",
+                    "label": "Content",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0,
+                    "selected": 0
+                },
+                {
+                    "key": "field_693bedc7a390b",
+                    "label": "Hour",
+                    "name": "hour",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "1:00 pm",
+                    "maxlength": "",
+                    "allow_in_bindings": 0,
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_693bedc7a390c",
+                    "label": "Center content",
+                    "name": "center_contennt",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_693bedc7a390d",
+                            "label": "Event image",
+                            "name": "event_image",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "id",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "allow_in_bindings": 0,
+                            "preview_size": "medium"
+                        },
+                        {
+                            "key": "field_693bedc7a390e",
+                            "label": "Description",
+                            "name": "description",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "<h2>Welcome Party<\/h2>\r\n<h3>07.05.26<\/h3>\r\n\r\n<h4>Dresscode<\/h4>\r\n<p>Cowboy Chic<\/p>\r\n<a href=\"#\">Clic aquí para ver referentes.<\/a>",
+                            "allow_in_bindings": 0,
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ]
+                },
+                {
+                    "key": "field_693bedc7a390f",
+                    "label": "Content right",
+                    "name": "content_right",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "<p>Hacienda Fizebad\r\nEl Retiro, Antioquia<\/p>\r\n<a href=\"#\">Clic aquí para ver Google maps<\/a>",
+                    "allow_in_bindings": 0,
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_693bf34bce29d",
+                    "label": "Images",
+                    "name": "",
+                    "aria-label": "",
+                    "type": "tab",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "placement": "top",
+                    "endpoint": 0,
+                    "selected": 0
+                },
+                {
+                    "key": "field_693bedf7a3911",
+                    "label": "Left top image",
+                    "name": "left_top_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_693bedc7a3910",
+                    "label": "Image left bottom",
+                    "name": "image_left_bottom",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_693bf364ce29e",
+                    "label": "Image right",
+                    "name": "image_right",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium"
+                }
+            ]
+        },
+        {
+            "key": "field_693bee717439d",
+            "label": "End content",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_693cc6388fc5d",
+            "label": "Content end",
+            "name": "content_end",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_693cc6498fc5e",
+                    "label": "Dresscode and gif",
+                    "name": "dresscode_and_gif",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "<h2>Dresscode<\/h2>\r\n<p>Etiqueta - Black Tie<\/p>\r\n<p>Clic aquí para ver referentes.<\/p>\r\n<p><\/p>\r\n<p><\/p>\r\n<p><\/p>\r\n<p><\/p>\r\n<h2>Regalo<\/h2>\r\n<p>Tu presencia en nuestra boda es el regalo más valioso para nosotros.<br>\r\nSi deseas hacernos un detalle adicional, puedes hacerlo por esta vía:<\/p>\r\n<p>Zelle<br>\r\nspacella2025@gmail.com<\/p>",
+                    "allow_in_bindings": 0,
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_693cc6718fc5f",
+                    "label": "Top right image",
+                    "name": "top_right_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium"
+                },
+                {
+                    "key": "field_693cc6848fc60",
+                    "label": "Bottom left image",
+                    "name": "bottom_left_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "id",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": "",
+                    "allow_in_bindings": 0,
+                    "preview_size": "medium"
                 }
             ]
         }
@@ -283,5 +761,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757332105
+    "display_title": "",
+    "modified": 1765591246
 }

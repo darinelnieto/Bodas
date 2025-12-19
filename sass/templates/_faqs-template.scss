@@ -1,16 +1,17 @@
 #faqs-template-be8fe8 {
-    .title{
-        padding: scaleVW(133, $desktop) 0 scaleVW(77, $desktop) 0;
+    .title-page{
+        padding-bottom:  scaleVW(77, $desktop);
+        background: $purple;
         @media(max-width:768px){
-            padding: scaleVW(57, $movil) 0 scaleVW(37, $movil) 0;
+            padding-bottom: scaleVW(37, $movil);
         }
         h1{
             margin: 0;
             text-align: center;
-            font-family: $bodoni;
+            font-family: $title;
             font-size: scaleVW(72, $desktop);
             line-height: LH(66.4, 72);
-            color: $primary;
+            color: $violeta;
             @media(max-width:768px){
                 font-size: scaleVW(30.26, $movil);
                 line-height: LH(27.9, 30.26);
@@ -27,11 +28,10 @@
             h2{
                 margin: 0;
                 text-align: center;
-                font-family: $bodoni;
-                font-size: scaleVW(48, $desktop);
-                line-height: LH(101.74, 48);
-                font-style: italic;
-                color: $primary;
+                font-family: $title;
+                font-size: scaleVW(52.62, $desktop);
+                line-height: LH(63.14, 52.62);
+                margin-bottom: scaleVW(63, $desktop);
                 @media(max-width:768px){
                     font-size: scaleVW(22, $movil);
                     line-height: LH(23.01, 22);
@@ -67,26 +67,96 @@
                     }
                 }
                 .question-and-answer{
-                    font-family: $bodoni;
-                    font-style: italic;
-                    color: $primary;
                     width: scaleVW(1364.7291, $desktop);
                     h3, strong{
+                        font-family: $title;
+                        font-size: scaleVW(24, $desktop);
+                        line-height: LH(28.8, 24);
+                        @media(max-width:768px){
+                            font-size: scaleVW(20, $movil);
+                            line-height: LH(24, 20);
+                        }
+                    }
+                    p{
+                        font-family: $text;
                         font-size: scaleVW(21, $desktop);
                         line-height: LH(25.2, 21);
-                        font-weight: 600;
                         @media(max-width:768px){
                             font-size: scaleVW(16, $movil);
                             line-height: LH(19.2, 16);
                         }
                     }
-                    p{
-                        font-size: scaleVW(21, $desktop);
-                        line-height: LH(25.2, 21);
-                        @media(max-width:768px){
-                            font-size: scaleVW(16, $movil);
-                            line-height: LH(19.2, 16);
-                        }
+                }
+            }
+        }
+    }
+    .faqs.apricot{
+        background: $orange_lt;
+        .title{
+            h2{
+                color: $orange;
+            }
+        }
+        .faqs-list{
+            .the-item{
+                .question-and-answer{
+                    color: $orange;
+                    a{
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+    .faqs.lavender-pink{
+        background: $pink;
+        .title{
+            h2{
+                color: $fucsia;
+            }
+        }
+        .faqs-list{
+            .the-item{
+                .question-and-answer{
+                    color: $fucsia;
+                    a{
+                        color: $fucsia;
+                    }
+                }
+            }
+        }
+    }
+    .faqs.thistle{
+        background: $purple;
+        .title{
+            h2{
+                color: $violeta;
+            }
+        }
+        .faqs-list{
+            .the-item{
+                .question-and-answer{
+                    color: $violeta;
+                    a{
+                        color: $violeta;
+                    }
+                }
+            }
+        }
+    }
+    .faqs.straw{
+        background: $green_lt;
+        .title{
+            h2{
+                color: $green;
+            }
+        }
+        .faqs-list{
+            .the-item{
+                .question-and-answer{
+                    color: $green;
+                    a{
+                        color: $green;
                     }
                 }
             }

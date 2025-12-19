@@ -13,15 +13,13 @@
             text-align: center;
             margin-bottom: scaleVW(112, $desktop);
             h2{
-                font-size: scaleVW(60, $desktop);
-                line-height: LH(72, 60);
-                color: $primary;
-                font-family: $big_caslon;
-                letter-spacing: scaleVW(10, $desktop);
+                font-size: scaleVW(71, $desktop);
+                line-height: LH(85.2, 71);
+                font-family: $title;
                 margin: 0;
             }
             p{
-                font-family: $bodoni;
+                font-family: $title;
                 color: $primary;
                 font-style: italic;
                 font-size: scaleVW(27.87, $desktop);
@@ -34,7 +32,6 @@
                     font-size: scaleVW(26, $movil);
                     line-height: LH(31.2, 26);
                     margin-bottom: scaleVW(20, $movil);
-                    letter-spacing: scaleVW(7, $movil);
                 }
                 p{
                     font-size: scaleVW(16, $movil);
@@ -74,9 +71,9 @@
                         width: scaleVW(385.1736, $desktop);
                         margin: 0 auto;
                         h3{
-                            color: $primary;
-                            font-family: $bodoni;
+                            font-family: $text;
                             font-style: italic;
+                            font-weight: bold;
                             font-size: scaleVW(21, $desktop);
                             line-height: LH(25.2, 21);
                             margin-bottom: scaleVW(43, $desktop);
@@ -84,9 +81,7 @@
                             font-weight: 700;
                         }
                         p{
-                            color: $primary;
-                            font-family: $bodoni;
-                            font-style: italic;
+                            font-family: $text;
                             font-size: scaleVW(21, $desktop);
                             line-height: LH(25.2, 21);
                             margin-bottom: 0;
@@ -103,6 +98,90 @@
                                 font-size: scaleVW(14, $movil);
                                 line-height: LH(19.2, 14);
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.restaurants-partial-38d844.apricot{
+    background: $orange_lt;
+    .content{
+        .top{
+            h2, p{
+                color: $orange;
+            }
+        }
+        .restaurants{
+            .restaurant{
+                a{
+                    .text-content{
+                        h3, p{
+                            color: $orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.restaurants-partial-38d844.lavender-pink{
+    background: $pink;
+    .content{
+        .top{
+            h2, p{
+                color: $fucsia;
+            }
+        }
+        .restaurants{
+            .restaurant{
+                a{
+                    .text-content{
+                        h3, p{
+                            color: $fucsia;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.restaurants-partial-38d844.thistle{
+    background: $purple;
+    .content{
+        .top{
+            h2, p{
+                color: $violeta;
+            }
+        }
+        .restaurants{
+            .restaurant{
+                a{
+                    .text-content{
+                        h3, p{
+                            color: $violeta;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.restaurants-partial-38d844.straw{
+    background: $green_lt;
+     .content{
+        .top{
+            h2, p{
+                color: $green;
+            }
+        }
+        .restaurants{
+            .restaurant{
+                a{
+                    .text-content{
+                        h3, p{
+                            color: $green;
                         }
                     }
                 }

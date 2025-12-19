@@ -21,7 +21,7 @@ $repeat = $banner['transportations_and_climate'];
     </div>
     <?php if($repeat): foreach($repeat as $item): ?>
         <div class="repeat-content <?= $item['text-content']; ?>">
-            <span class="before" style="background:var(<?= $item['background']; ?>)"></span>
+            <span class="before"></span>
             <div class="content">
                 <h2 class="title"><?= $item['title'] ?? ''; ?></h2>
                 <p class="description"><?= $item['description'] ?? ''; ?></p>

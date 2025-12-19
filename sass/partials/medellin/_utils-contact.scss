@@ -1,0 +1,103 @@
+.utils-contact-partial-1f09f0 {
+    background: $pink;
+    padding-top: scaleVW(128, $desktop);
+    padding-bottom: scaleVW(84, $desktop);
+    @media(max-width:768px){
+        padding-top: scaleVW(68, $movil);
+        padding-bottom: scaleVW(68, $movil);
+    }
+    .content{
+        width: scaleVW(1554, $desktop);
+        margin: 0 auto;
+        @media(max-width:768px){
+            width: scaleVW(360, $movil);
+        }
+        .title{
+            font-size: scaleVW(71, $desktop);
+            line-height: LH(85.2, 71);
+            font-family: $title;
+            color: $fucsia;
+            margin: 0;
+            margin-bottom: scaleVW(122, $desktop);
+            text-align: center;
+            @media(max-width:768px){
+                font-size: scaleVW(26, $movil);
+                line-height: LH(31.2, 26);
+                margin-bottom: scaleVW(40, $movil);
+            }
+        }
+        .contacts-list{
+            display: flex;
+            flex-wrap: wrap;
+            gap: scaleVW(47, $desktop) scaleVW(206, $desktop);
+            margin-bottom: scaleVW(75, $desktop);
+            @media(max-width:768px){
+                gap: scaleVW(30, $movil);
+            }
+            .contact-card{
+                width: scaleVW(378, $desktop);
+                border: scaleVW(2, $desktop) solid $fucsia;
+                @media(max-width:768px){
+                    width: scaleVW(360, $movil);
+                    border: scaleVW(2, $movil) solid $fucsia;
+                }
+                .top{
+                    border-bottom: scaleVW(2, $desktop) solid $fucsia;
+                    min-height: scaleVW(81, $desktop);
+                    display: flex;
+                    align-items: center;
+                    padding: 0 scaleVW(20, $desktop);
+                    h3{
+                        color: $fucsia;
+                        font-family: $text;
+                        font-weight: bold;
+                        font-size: scaleVW(24, $desktop);
+                        line-height: LH(28.8, 24);
+                        margin: 0;
+                    }
+                    @media(max-width:768px){
+                        border-width: scaleVW(2, $movil);
+                        min-height: scaleVW(60, $movil);
+                        padding: 0 scaleVW(15, $movil);
+                        h3{
+                            font-size: scaleVW(20, $movil);
+                            line-height: LH(24, 20);
+                        }
+                    }
+                }
+                .bottom{
+                    color: $fucsia;
+                    font-family: $text;
+                    font-size: scaleVW(21, $desktop);
+                    line-height: LH(25.2, 21);
+                    margin: 0;
+                    padding: scaleVW(20, $desktop);
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                    white-space: normal;
+                    a{
+                        color: $fucsia;
+                    }
+                    @media(max-width:768px){
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(19.2, 16);
+                        padding: scaleVW(15, $movil);
+                    }
+                }
+            }
+        }
+        .t-end{
+            color: $fucsia;
+            font-family: $text;
+            font-size: scaleVW(21, $desktop);
+            line-height: LH(25.2, 21);
+            width: scaleVW(1358.2439, $desktop);
+            margin: 0 auto;
+            @media(max-width:768px){
+                font-size: scaleVW(16, $movil);
+                line-height: LH(19.2, 16);
+                width: scaleVW(340, $movil);
+            }
+        }
+    }
+}

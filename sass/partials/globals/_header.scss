@@ -1,7 +1,20 @@
 .header-partial-f00228 {
-    padding-top: scaleVW(49, $desktop);
+    padding: scaleVW(126, $desktop);
+    position: relative;
     @media(max-width:768px){
-        padding-top: scaleVW(25, $movil);
+        padding: scaleVW(25, $movil);
+    }
+    .custom-logo{
+        position: absolute;
+        top: scaleVW(78, $desktop);
+        left: scaleVW(83, $desktop);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg{
+            width: scaleVW(136.0194, $desktop);
+            height: scaleVW(206.4964, $desktop);
+        }
     }
     .content{
         width: scaleVW(1306.7671, $desktop);
@@ -15,7 +28,7 @@
             line-height: LH(74.95, 62.46);
             text-align: center;
             color: $primary;
-            font-family: $big_caslon;
+            font-family: $title;
             margin-bottom: scaleVW(36, $desktop);
         }
         .bar-menu{
@@ -30,7 +43,7 @@
             span{
                 width: scaleVW(30, $movil);
                 height: scaleVW(1.9, $movil);
-                background: $primary;
+                // background: $primary;
             }
             @media(max-width:768px){
                 display: flex;
@@ -60,11 +73,12 @@
                 gap: scaleVW(66, $desktop);
                 li{
                     a{
-                        color: $primary;
-                        font-size: scaleVW(18, $desktop);
-                        line-height: LH(21.6, 18);
-                        font-family: $bodoni;
+                        // color: $primary;
+                        font-size: scaleVW(21, $desktop);
+                        line-height: LH(25.2, 21);
+                        font-family: $title;
                         text-decoration: none;
+                        text-transform: uppercase;
                     }
                     .active{
                         font-weight: 700;
@@ -85,6 +99,7 @@
                     flex-direction: column;
                     gap: scaleVW(6, $movil);
                     align-items: baseline;
+                    padding-left: scaleVW(20, $movil);
                     li{
                         a{
                             text-align: right;
@@ -97,6 +112,114 @@
         }
         .the-nav.active{
             right: 0;
+        }
+    }
+}
+.header-partial-f00228.apricot{
+    background: $orange_lt;
+    .custom-logo{
+        svg{
+            path{
+                fill: $orange;
+            }
+        }
+    }
+    .content{
+        .bar-menu{
+            span{
+                background: $orange;
+            }
+        }
+        .the-nav{
+            background: $orange_lt;
+            ul{
+                li{
+                    a{
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+}
+.header-partial-f00228.lavender-pink{
+    background: $pink;
+    .custom-logo{
+        svg{
+            path{
+                fill: $fucsia;
+            }
+        }
+    }
+    .content{
+        .bar-menu{
+            span{
+                background: $fucsia;
+            }
+        }
+        .the-nav{
+            background: $pink;
+            ul{
+                li{
+                    a{
+                        color: $fucsia;
+                    }
+                }
+            }
+        }
+    }
+}
+.header-partial-f00228.thistle{
+    background: $purple;
+    .custom-logo{
+        svg{
+            path{
+                fill: $violeta;
+            }
+        }
+    }
+    .content{
+        .bar-menu{
+            span{
+                background: $violeta;
+            }
+        }
+        .the-nav{
+            background: $purple;
+            ul{
+                li{
+                    a{
+                        color: $violeta;
+                    }
+                }
+            }
+        }
+    }
+}
+.header-partial-f00228.straw{
+    background: $green_lt;
+    .custom-logo{
+        svg{
+            path{
+                fill: $green;
+            }
+        }
+    }
+    .content{
+        .bar-menu{
+            span{
+                background: $green;
+            }
+        }
+        .the-nav{
+            background: $green_lt;
+            ul{
+                li{
+                    a{
+                        color: $green;
+                    }
+                }
+            }
         }
     }
 }

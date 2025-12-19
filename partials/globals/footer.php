@@ -9,8 +9,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
 }
 $copy = get_field('copyright', 'option');
+$background = get_field('footer_background');
 ?>
-<section class="footer-partial-f2356c" style="background-image: url(<?= get_field('background_image', 'option'); ?>);">
+<section class="footer-partial-f2356c <?php if(!empty($background)){ echo $background; }else{ echo 'apricot'; } ?>">
     <p class="copyright"><?= $copy; ?></p>
 </section>
-                    

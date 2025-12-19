@@ -11,7 +11,7 @@ $restaurants = get_field('restaurant_content');
 if(!empty($restaurants)):
     foreach($restaurants as $content):
 ?>
-<section class="restaurants-partial-38d844" style="background:var(<?= $content['background']; ?>);">
+<section class="restaurants-partial-38d844 <?= $content['background'] ?? 'apricot'; ?>">
     <div class="content">
         <div class="top">
             <?php if(!empty($content['title'])): ?>

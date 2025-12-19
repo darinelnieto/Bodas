@@ -3,9 +3,9 @@
     "title": "Hotels",
     "fields": [
         {
-            "key": "field_68bec6d2ee1b1",
-            "label": "Background",
-            "name": "background",
+            "key": "field_693d497908a56",
+            "label": "Header background",
+            "name": "header_background",
             "aria-label": "",
             "type": "select",
             "instructions": "",
@@ -17,12 +17,12 @@
                 "id": ""
             },
             "choices": {
-                "--main-color": "--main-color",
-                "--secondary-color": "--secondary-color",
-                "--third-color": "--third-color",
-                "--four-color": "--four-color"
+                "apricot": "apricot",
+                "lavender-pink": "lavender-pink",
+                "thistle": "thistle",
+                "straw": "straw"
             },
-            "default_value": false,
+            "default_value": "straw",
             "return_format": "value",
             "multiple": 0,
             "allow_null": 0,
@@ -34,11 +34,11 @@
             "save_options": 0
         },
         {
-            "key": "field_68bec5506e7f0",
-            "label": "Main content",
-            "name": "",
+            "key": "field_693d49ac08a58",
+            "label": "Footer background",
+            "name": "footer_background",
             "aria-label": "",
-            "type": "tab",
+            "type": "select",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -47,95 +47,22 @@
                 "class": "",
                 "id": ""
             },
-            "placement": "left",
-            "endpoint": 0,
-            "selected": 0
-        },
-        {
-            "key": "field_68bec5706e7f1",
-            "label": "Main",
-            "name": "main",
-            "aria-label": "",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
+            "choices": {
+                "apricot": "apricot",
+                "lavender-pink": "lavender-pink",
+                "thistle": "thistle",
+                "straw": "straw"
             },
-            "layout": "block",
-            "sub_fields": [
-                {
-                    "key": "field_68bec57b6e7f2",
-                    "label": "Main image",
-                    "name": "main_image",
-                    "aria-label": "",
-                    "type": "image",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "array",
-                    "library": "all",
-                    "min_width": "",
-                    "min_height": "",
-                    "min_size": "",
-                    "max_width": "",
-                    "max_height": "",
-                    "max_size": "",
-                    "mime_types": "",
-                    "allow_in_bindings": 0,
-                    "preview_size": "medium"
-                },
-                {
-                    "key": "field_68bec5866e7f3",
-                    "label": "Title",
-                    "name": "title",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "allow_in_bindings": 0,
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
-                    "key": "field_68bec58d6e7f4",
-                    "label": "Desctiprion",
-                    "name": "desctiprion",
-                    "aria-label": "",
-                    "type": "textarea",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "allow_in_bindings": 0,
-                    "rows": "",
-                    "placeholder": "",
-                    "new_lines": "br"
-                }
-            ]
+            "default_value": "straw",
+            "return_format": "value",
+            "multiple": 0,
+            "allow_null": 0,
+            "allow_in_bindings": 0,
+            "ui": 0,
+            "ajax": 0,
+            "placeholder": "",
+            "create_options": 0,
+            "save_options": 0
         },
         {
             "key": "field_68c00ba5d0ea7",
@@ -172,27 +99,6 @@
             "layout": "block",
             "sub_fields": [
                 {
-                    "key": "field_68c00bced0ea9",
-                    "label": "Title",
-                    "name": "title",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "allow_in_bindings": 0,
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": ""
-                },
-                {
                     "key": "field_68c00bd5d0eaa",
                     "label": "Hotels list",
                     "name": "hotels_list",
@@ -228,7 +134,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
+                            "return_format": "id",
                             "library": "all",
                             "min_width": "",
                             "min_height": "",
@@ -586,5 +492,6 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757419821
+    "display_title": "",
+    "modified": 1765624562
 }

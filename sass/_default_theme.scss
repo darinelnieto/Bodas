@@ -1,16 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
-    font-family: 'Big Caslon';
-    src: url('../fonts/BigCaslon-Medium.woff2') format('woff2'),
-        url('../fonts/BigCaslon-Medium.woff') format('woff');
-    font-weight: 500;
+    font-family: 'Circular';
+    src: url('../fonts/CircularStd-Book.woff2') format('woff2'),
+        url('../fonts/CircularStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular';
+    src: url('../fonts/CircularStd-BookItalic.woff2') format('woff2'),
+        url('../fonts/CircularStd-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Circular';
+    src: url('../fonts/CircularStd-Bold.woff2') format('woff2'),
+        url('../fonts/CircularStd-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'NewYork';
+    src: url('../fonts/NewYork.woff2') format('woff2'),
+        url('../fonts/NewYork.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 /*========== Font family ==========*/
-$bodoni: "Bodoni Moda", serif;
+$title: 'NewYork';
 $raleway: "Raleway", sans-serif;
-$big_caslon: 'Big Caslon';
+$text: 'Circular';
 /*======== Globals color ========*/
 $primary: var(--main-color);
 $secondary: var(--secondary-color);
@@ -18,6 +45,16 @@ $third: var(--third-color);
 $four: var(--four-color);
 $black:#000000;
 $white:#ffffff;
+/*======== News colors ========*/ 
+$violeta: #5955a2;
+$purple: #e1c6e1;
+$orange: #f16730;
+$orange_lt: #f3c5a8;
+$fucsia: #cb3395;
+$pink: #f6b4df;
+$green: #8e9709;
+$green_lt: #d9dc6c;
+
 /*======== Function width ========*/
 $movil: 390;
 $desktop: 1920;
@@ -33,5 +70,53 @@ html{
     body{
         width: 100%;
         overflow-x: hidden;
+    }
+}
+// Animations
+@keyframes bee{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(15%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes beeTwo{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translate(15%, -15%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes song{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-1.8deg);
+    }
+    75%{
+        transform: rotate(1.8deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes flower{
+    0%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(0.9);
+    }
+    100%{
+        transform: scale(0.8);
     }
 }

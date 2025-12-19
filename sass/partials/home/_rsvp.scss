@@ -1,42 +1,70 @@
 .rsvp-partial-39366a {
     position: relative;
-    padding: scaleVW(194, $desktop) 0;
+    padding: scaleVW(247.5, $desktop) 0 scaleVW(411, $desktop) 0;
     overflow: hidden;
+    background: $pink;
     @media(max-width:768px){
-        padding: scaleVW(48, $movil) scaleVW(27, $movil);
+        padding: scaleVW(38, $movil) 0 scaleVW(114, $movil) 0;
     }
     .form-content{
-        width: scaleVW(728, $desktop);
+        width: scaleVW(1036.4141, $desktop);
         margin: 0 auto;
+        position: relative;
+        z-index: 1;
         @media(max-width:768px){
-            width: 100%;
+            width: scaleVW(212.126, $movil);
         }
         .title{
-            color: $primary;
+            color: $fucsia;
             text-align: center;
-            font-size: scaleVW(72, $desktop);
-            line-height: LH(66.4, 72);
-            font-family: $bodoni;
-            letter-spacing: scaleVW(14, $desktop);
-            margin-bottom: scaleVW(100, $desktop);
+            font-size: scaleVW(92.72, $desktop);
+            line-height: LH(111.27, 92.72);
+            font-family: $title;
+            margin-bottom: scaleVW(28, $desktop);
             @media(max-width:768px){
-                font-size: scaleVW(34.85, $movil);
-                line-height: LH(14.4, 34.85);
-                letter-spacing: scaleVW(14, $movil);
-                margin-bottom: scaleVW(48, $movil);
+                font-size: scaleVW(28.92, $movil);
+                line-height: LH(34.7, 28.92);
+                margin-bottom: scaleVW(6, $movil);
             }
         }
         .description{
             text-align: center;
-            font-family: $bodoni;
-            color: $black;
+            font-family: $text;
+            color: $fucsia;
             font-size: scaleVW(39.46, $desktop);
             line-height: LH(47.36, 39.46);
-            margin-bottom: scaleVW(79, $desktop);
+            margin-bottom: scaleVW(57, $desktop);
             @media(max-width:768px){
-                font-size: scaleVW(19.1, $movil);
-                line-height: LH(22.92, 19.1);
-                margin-bottom: scaleVW(38, $movil);
+                font-size: scaleVW(16, $movil);
+                line-height: LH(19.2, 16);
+                margin-bottom: scaleVW(11.5, $movil);
+            }
+        }
+        .cta-link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            width: scaleVW(202, $desktop);
+            height: scaleVW(68, $desktop);
+            font-size: scaleVW(42.63, $desktop);
+            line-height: LH(51.16, 42.63);
+            color: #f7f2e6;
+            text-decoration: none;
+            font-family: $title;
+            background: $fucsia;
+            border: scaleVW(2, $desktop) solid $fucsia;
+            transition: all;
+            &:hover{
+                background: transparent;
+                color: $fucsia;
+            }
+            @media(max-width:768px){
+                width: scaleVW(70.998, $movil);
+                height: scaleVW(23.9003, $movil);
+                font-size: scaleVW(14.98, $movil);
+                line-height: LH(17.98, 14.98);
+                border: scaleVW(2, $movil) solid $fucsia;
             }
         }
         .form{
@@ -45,7 +73,7 @@
                     text-align: center;
                     margin-bottom: scaleVW(69, $desktop);
                     label{
-                        font-family: $bodoni;
+                        font-family: $title;
                         color: $black;
                         font-size: scaleVW(30, $desktop);
                         line-height: LH(36, 30);
@@ -56,7 +84,7 @@
                         }
                     }
                     input, textarea{
-                        font-family: $bodoni;
+                        font-family: $title;
                         color: $black;
                         font-size: scaleVW(27, $desktop);
                         line-height: LH(36, 27);
@@ -85,7 +113,7 @@
                     text-align: center;
                     margin-bottom: scaleVW(69, $desktop);
                     label{
-                        font-family: $bodoni;
+                        font-family: $title;
                         color: $black;
                         font-size: scaleVW(30, $desktop);
                         line-height: LH(36, 30);
@@ -185,7 +213,7 @@
                         background: $four;
                         border: none;
                         outline: none;
-                        font-family: $bodoni;
+                        font-family: $title;
                         font-size: scaleVW(30, $desktop);
                         line-height: LH(36, 30);
                         @media(max-width:768px){
@@ -205,12 +233,31 @@
             }
         }
     }
-    img{
-        width: scaleVW(584.1304, $desktop);
-        height: scaleVW(439.0092, $desktop);
+    .svg-bee{
+        width: scaleVW(120.6526, $desktop);
+        height: scaleVW(112.0851, $desktop);
         position: absolute;
-        bottom: 0;
-        right: scaleVW(25, $desktop);
-        transform: translateY(scaleVW(62, $desktop));
+        left: scaleVW(138, $desktop);
+        top: scaleVW(411, $desktop);
+        animation: beeTwo 3.5s ease-in-out infinite;
+        @media(max-width:768px){
+            width: scaleVW(37.6269, $movil);
+            height: scaleVW(34.955, $movil);
+            left: scaleVW(24, $movil);
+            top: scaleVW(12, $movil);
+        }
+    }
+    .bakground-imagen{
+        width: scaleVW(2160, $desktop);
+        height: scaleVW(860, $desktop);
+        position: absolute;
+        left: scaleVW(-121, $desktop);
+        top: scaleVW(420, $desktop);
+        @media(max-width:768px){
+            left: 50%;
+            transform: translateX(-50%);
+            top: inherit;
+            bottom: scaleVW(-40, $movil);
+        }
     }
 }

@@ -1,0 +1,204 @@
+.party-partial-b2b7b5 {
+    background: $pink;
+    padding-top: 0;
+    padding-bottom: scaleVW(86, $desktop);
+    @media(max-width:768px){
+        padding-bottom: scaleVW(47, $movil);
+    }
+    .title-content{
+        h1{
+            text-align: center;
+            font-size: scaleVW(92.72, $desktop);
+            line-height: LH(111.27, 92.72);
+            font-family: $title;
+            color: $fucsia;
+            margin-bottom: scaleVW(85, $desktop);
+            @media(max-width:768px){
+                margin-bottom: scaleVW(31, $movil);
+                font-size: scaleVW(39, $movil);
+                line-height: LH(46.8, 39);
+            }
+        }
+    }
+    .content{
+        width: scaleVW(1621.5171, $desktop);
+        margin-left: auto;
+        margin-right: scaleVW(63, $desktop);
+        display: flex;
+        align-items: end;
+        gap: scaleVW(23, $desktop);
+        margin-bottom: scaleVW(56, $desktop);
+        @media(max-width:768px){
+            flex-direction: column;
+            align-items: center;
+            width: scaleVW(360, $movil);
+            gap: scaleVW(30, $movil);
+            margin-bottom: scaleVW(27, $movil);
+        }
+        .left{
+            width: scaleVW(419.4482, $desktop);
+            padding-bottom: scaleVW(144, $desktop);
+            p{
+                font-family: $title;
+                color: $fucsia;
+                font-size: scaleVW(55.28, $desktop);
+                line-height: LH(66.33, 55.28);
+                margin: 0;
+            }
+            @media(max-width:768px){
+                display: none;
+                padding: 0;
+                width: 100%;
+                text-align: center;
+                p{
+                    font-size: scaleVW(20, $movil);
+                    line-height: LH(24, 20);
+                }
+            }
+        }
+        .center{
+            width: scaleVW(758.5617, $desktop);
+            height: scaleVW(495.295, $desktop);
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+            @media(max-width:768px){
+                width: scaleVW(360, $movil);
+                height: scaleVW(235.0583, $movil);
+                img{
+                    width: 100%;
+                    height: 100%;
+                    margin-left: 5vw;
+                }
+            }
+        }
+        .right{
+            width: scaleVW(419.4478, $desktop);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: scaleVW(59, $desktop);
+            padding-bottom: scaleVW(48, $desktop);
+            p{
+                font-family: $title;
+                color: $fucsia;
+                font-size: scaleVW(46.9, $desktop);
+                line-height: LH(47.8, 46.9);
+                margin: 0;
+                a{
+                    font-family: $text;
+                    font-size: scaleVW(21, $desktop);
+                    line-height: LH(25, 21);
+                    display: block;
+                    flex-wrap: wrap;
+                    width: scaleVW(227.0113, $desktop);
+                    margin: 0 auto;
+                    text-decoration: none;
+                    color: $fucsia;
+                }
+            }
+            @media(max-width:768px){
+                padding: 0;
+                width: 100%;
+                text-align: center;
+                gap: scaleVW(8, $movil);
+                p{
+                    font-size: scaleVW(20, $movil);
+                    line-height: LH(29.17, 20);
+                    a{
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(19.2, 16);
+                        width: scaleVW(141.2627, $movil);
+                    }
+                }
+            }
+        }
+    }
+    .description{
+        text-align: center;
+        width: scaleVW(800, $desktop);
+        margin: 0 auto;
+        color: $fucsia;
+        @media(max-width:768px){
+            width: scaleVW(360, $movil);
+        }
+        h2{
+            font-family: $title;
+            font-size: scaleVW(65.78, $desktop);
+            line-height: LH(78.93, 65.78);
+            margin: 0;
+            @media(max-width:768px){
+                font-size: scaleVW(39, $movil);
+                line-height: LH(46.8, 39);
+            }
+        }
+        h3{
+            font-family: $title;
+            font-size: scaleVW(55.28, $desktop);
+            line-height: LH(66.33, 55.28);
+            margin: 0;
+            margin-bottom: scaleVW(67, $desktop);
+            @media(max-width:768px){
+                font-size: scaleVW(28.63, $movil);
+                line-height: LH(34.36, 28.63);
+                margin-bottom: scaleVW(50.2471, $movil);
+            }
+        }
+
+        h4{
+            font-family: $title;
+            font-size: scaleVW(49.17, $desktop);
+            line-height: LH(59, 49.17);
+            margin-top: 0;
+            margin-bottom: scaleVW(20, $desktop);
+            @media(max-width:768px){
+                font-size: scaleVW(25.47, $movil);
+                line-height: LH(30.56, 25.47);
+                margin-bottom: scaleVW(7, $movil);
+            }
+        }
+        p{
+            font-family: $text;
+            color: $fucsia;
+            margin-bottom: scaleVW(23, $desktop);
+            font-size: scaleVW(24, $desktop);
+            line-height: LH(28.8, 24);
+            a{
+                color: $fucsia;
+                text-decoration: none;
+            }
+            @media(max-width:768px){
+                font-size: scaleVW(16, $movil);
+                line-height: LH(19.2, 16);
+                margin-bottom: scaleVW(7, $movil);
+            }
+        }
+        p:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .left.movil{
+        width: scaleVW(419.4482, $desktop);
+        padding-bottom: scaleVW(144, $desktop);
+        display: none;
+        p{
+            font-family: $title;
+            color: $fucsia;
+            font-size: scaleVW(55.28, $desktop);
+            line-height: LH(66.33, 55.28);
+            margin: 0;
+        }
+        @media(max-width:768px){
+            padding: 0;
+            width: 100%;
+            text-align: center;
+            display: block;
+            p{
+                font-size: scaleVW(20, $movil);
+                line-height: LH(24, 20);
+            }
+        }
+    }
+}

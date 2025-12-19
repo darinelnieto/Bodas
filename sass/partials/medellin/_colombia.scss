@@ -1,5 +1,5 @@
 .colombia-partial-518f89 {
-    background: $third;
+    background: $orange_lt;
     padding-top: scaleVW(135, $desktop);
     padding-bottom: scaleVW(117, $desktop);
     @media(max-width:768px){
@@ -18,11 +18,10 @@
                 padding-top: scaleVW(75, $movil);
             }
             h2{
-                color: $primary;
-                font-family: $big_caslon;
-                color: $primary;
-                font-size: scaleVW(60, $desktop);
-                line-height: LH(72, 60);
+                color: $orange;
+                font-family: $title;
+                font-size: scaleVW(71, $desktop);
+                line-height: LH(85.2, 71);
                 margin-bottom: scaleVW(154, $desktop);
                 letter-spacing: scaleVW(10, $desktop);
                 @media(max-width:768px){
@@ -33,9 +32,9 @@
                 }
             }
             p{
-                color: $primary;
+                color: $orange;
                 margin: 0;
-                font-family: $bodoni;
+                font-family: $text;
                 font-style: italic;
                 font-size: scaleVW(34.12, $desktop);
                 line-height: LH(40.95, 34.12);
@@ -76,15 +75,14 @@
                     h3{
                         font-size: scaleVW(21, $desktop);
                         line-height: LH(25.2, 21);
-                        color: $primary;
-                        font-family: $bodoni;
+                        color: $orange;
+                        font-family: $text;
                         text-transform: uppercase;
-                        font-style: italic;
                         margin-bottom: scaleVW(35, $desktop);
                     }
                     p{
-                        font-family: $bodoni;
-                        color: $primary;
+                        font-family: $text;
+                        color: $orange;
                         font-style: italic;
                         font-size: scaleVW(21, $desktop);
                         line-height: LH(25.2, 21);

@@ -1,9 +1,9 @@
 .places-partial-fd9a4c {
-    background: $third;
+    background: $orange_lt;
     padding-top: scaleVW(82, $desktop);
     @media(max-width:768px){
-        padding-top: 0;
-    }
+        padding-top: scaleVW(68, $movil);
+    } 
     .content{
         width: scaleVW(1835, $desktop);
         margin: 0 auto;
@@ -12,10 +12,10 @@
         }
         h2{
             text-align: center;
-            font-family: $big_caslon;
-            color: $primary;
-            font-size: scaleVW(60, $desktop);
-            line-height: LH(72, 60);
+            font-family: $title;
+            color: $orange;
+            font-size: scaleVW(71, $desktop);
+            line-height: LH(81.2, 71);
             margin-bottom: scaleVW(50, $desktop);
             letter-spacing: scaleVW(10, $desktop);
             @media(max-width:768px){
@@ -31,8 +31,8 @@
                 margin-bottom: scaleVW(47, $movil);
             }
             h3{
-                color: $primary;
-                font-family: $bodoni;
+                color: $orange;
+                font-family: $text;
                 font-style: italic;
                 text-align: center;
                 font-size: scaleVW(34.12, $desktop);
@@ -71,15 +71,16 @@
                         width: 100%;
                         padding: 0 scaleVW(29, $desktop);
                         h4{
-                            color: $primary;
-                            font-family: $bodoni;
+                            color: $orange;
+                            font-family: $text;
+                            font-weight: bold;
                             font-size: scaleVW(24, $desktop);
                             line-height: LH(28.8, 24);
                             margin-bottom: scaleVW(35, $desktop);
                         }
                         p{
-                            color: $primary;
-                            font-family: $bodoni;
+                            color: $orange;
+                            font-family: $text;
                             font-size: scaleVW(21, $desktop);
                             line-height: LH(25.2, 21);
                             margin-bottom: 0;

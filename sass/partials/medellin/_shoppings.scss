@@ -1,18 +1,17 @@
 .shoppings-partial-6a31bf {
     padding: scaleVW(85, $desktop) 0;
-    background: $third;
+    background: $green_lt;
     @media(max-width:768px){
-        padding: 0 0 scaleVW(75, $movil) 0;
+        padding: scaleVW(68, $movil) 0 scaleVW(75, $movil) 0;
     }
     .content{
         width: scaleVW(1719, $desktop);
         margin: 0 auto;
         h2{
-            font-size: scaleVW(60, $desktop);
-            line-height: LH(72, 60);
-            color: $primary;
-            font-family: $big_caslon;
-            letter-spacing: scaleVW(10, $desktop);
+            font-size: scaleVW(71, $desktop);
+            line-height: LH(85.2, 71);
+            color: $green;
+            font-family: $title;
             margin-bottom: scaleVW(100, $desktop);
             text-align: center;
         }
@@ -22,7 +21,6 @@
                 font-size: scaleVW(26, $movil);
                 line-height: LH(31.2, 26);
                 margin-bottom: scaleVW(45, $movil);
-                letter-spacing: scaleVW(7, $movil);
             }
         }
         .stores{
@@ -41,10 +39,12 @@
                 .text-content{
                     height: scaleVW(380, $desktop);
                     padding-top: scaleVW(43, $desktop);
+                    background: $green;
                     h3{
+                        color: $green_lt;
                         font-size: scaleVW(24, $desktop);
                         line-height: LH(28.8, 24);
-                        font-family: $bodoni;
+                        font-family: $text;
                         font-weight: 600;
                         width: scaleVW(322.1043, $desktop);
                         margin: 0 auto;
@@ -52,12 +52,14 @@
                         text-align: center;
                     }
                     .description{
-                        font-family: $bodoni;
+                        color: $green_lt;
+                        font-family: $text;
                         font-weight: 400;
                         font-size: scaleVW(21, $desktop);
                         line-height: LH(25.2, 21);
                         width: scaleVW(322.1043, $desktop);
                         margin: 0 auto;
+                        font-style: italic;
                     }
                     @media(max-width:768px){
                         width: 100%;

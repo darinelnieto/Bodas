@@ -42,7 +42,7 @@
                 letter-spacing: scaleVW(14, $desktop);
                 margin: 0 auto;
                 margin-bottom: scaleVW(150, $desktop);
-                font-family: $bodoni;
+                font-family: $title;
                 color: $primary;
                 text-transform: uppercase;
                 text-align: center;
@@ -60,7 +60,7 @@
                 height: scaleVW(304.9406, $desktop);
                 font-size: scaleVW(94.78, $desktop);
                 line-height: LH(101.74, 94.78);
-                font-family: $bodoni;
+                font-family: $title;
                 color: $primary;
                 font-style: italic;
                 margin: 0 auto;
@@ -75,7 +75,7 @@
             }
             .description{
                 color: $primary;
-                font-family: $bodoni;
+                font-family: $title;
                 font-size: scaleVW(39.46, $desktop);
                 line-height: LH(47.36, 39.46);
                 margin-bottom: 0;
